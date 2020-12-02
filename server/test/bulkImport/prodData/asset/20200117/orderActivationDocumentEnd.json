@@ -1,0 +1,26 @@
+[
+  {
+    "nazaRegisteredResourceMrid": "AUT750",
+    "orderAllValue": 0,
+    "createdDateTime": "1579266475",
+    "objectAggregationMeteringPoint": [
+      "PDL00000000277784",
+      "PRM00000000751304"
+    ],
+    "a04RegisteredResourceMrid": ["DSO3"]
+  },
+  {
+    "nazaRegisteredResourceMrid": "AUT516",
+    "orderAllValue": 0,
+    "createdDateTime": "1579264713",
+    "objectAggregationMeteringPoint": ["PPE_211955"],
+    "a04RegisteredResourceMrid": ["DSO2"]
+  },
+  {
+    "nazaRegisteredResourceMrid": "AUT037",
+    "orderAllValue": 0,
+    "createdDateTime": "1579269852",
+    "objectAggregationMeteringPoint": ["PDL00000000760489"],
+    "a04RegisteredResourceMrid": ["DSO2"]
+  }
+]

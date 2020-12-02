@@ -1,0 +1,10 @@
+ca:
+  name: ca.third.star.com
+  keyfile: "/etc/hyperledger/fabric-ca-third-server-config/ca.third.star.com_sk"
+  certfile: "/etc/hyperledger/fabric-ca-third-server-config/ca.third.star.com-cert.pem"
+
+tls:
+  enabled: false
+
+csr:
+  cn: ca.third.star.com

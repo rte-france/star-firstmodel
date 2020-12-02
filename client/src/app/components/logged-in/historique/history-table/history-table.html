@@ -1,0 +1,191 @@
+<div
+  class="table container"
+  *ngIf="filterTable.length !== 0; else noTableRowSelected"
+>
+  <div class="title-class row">
+    <div class="col-md-1 text" [hidden]="!hasFilterTableItem('Code / Name BSP')">
+      Code / Name BSP
+    </div>
+    <div
+      class="col-md-2 text site-column"
+      [hidden]="!hasFilterTableItem('Site')"
+    >
+      Site
+    </div>
+    <div class="col-md-1 text" [hidden]="!hasFilterTableItem('Date')">Date</div>
+    <div
+      class="col-md-1 text"
+      [hidden]="!hasFilterTableItem('NAZA Puissance')"
+      *ngIf="!isCompany('bsp')"
+    >
+      NAZA Puissance
+    </div>
+    <div class="col-md-1 text" [hidden]="!hasFilterTableItem('Site Puissance')">
+      Site Puissance
+    </div>
+    <div class="col-md-2 text" [hidden]="!hasFilterTableItem('OrderBySite id')">
+      Order by site id
+    </div>
+    <div class="col-md-2 text" [hidden]="!hasFilterTableItem('NazaOrderId')">
+      NAZA Order Id
+    </div>
+    <div
+      class="col-md-1 text"
+      [hidden]="!hasFilterTableItem('Ordre site reçu')"
+    >
+      Ordre site reçu
+    </div>
+    <div class="col-md-1 text" [hidden]="!hasFilterTableItem('Heure de début')">
+      Heure de début
+    </div>
+    <div
+      class="col-md-1 text"
+      [hidden]="!hasFilterTableItem('Heure ordre de fin')"
+    >
+      Heure ordre de fin
+    </div>
+    <div
+      class="col-md-1 text"
+      *ngIf="!isCompany('dso') && !isCompany('producer')"
+      [hidden]="!hasFilterTableItem('Ref. Offre')"
+    >
+      Ref. Offre
+    </div>
+    <div
+      class="col-md-1 last-column"
+      [hidden]="!hasFilterTableItem('Tech. constraint')"
+    ></div>
+  </div>
+  <div
+    *ngFor="let activation of filteredActivations"
+    (click)="createGraph(activation)"
+  >
+    <div
+      class="activation-row row"
+      [ngClass]="!activation.selected ? 'no-highlight' : 'highlight'"
+    >
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('Code / Name BSP')"
+      >
+        {{activation.bspOrganizationId}} <br />
+        <ng-container *ngFor="let eda of allEdas">
+          <span
+            class="bsp-name"
+            *ngIf="eda.a46Name === activation.bspOrganizationId"
+            >{{eda.a46IEC}}</span
+          >
+        </ng-container>
+      </div>
+      <div
+        class="col-md-2 detail-text larger-text site-column"
+        [hidden]="!hasFilterTableItem('Site')"
+      >
+        {{activation.objectAggregationMeteringPoint}}
+      </div>
+      <div class="col-md-1 detail-text" [hidden]="!hasFilterTableItem('Date')">
+        {{activation.date | date:'dd/MM/yyyy'}}
+      </div>
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('NAZA Puissance')"
+        *ngIf="!isCompany('bsp')"
+      >
+        {{activation.nazaOrder}} MW
+      </div>
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('Site Puissance')"
+      >
+        {{activation.siteOrder}}MW
+      </div>
+      <div
+        class="col-md-2 detail-text larger-text"
+        [hidden]="!hasFilterTableItem('OrderBySite id')"
+      >
+        {{activation.siteOrderId}}
+      </div>
+      <div
+        class="col-md-2 detail-text larger-text"
+        [hidden]="!hasFilterTableItem('NazaOrderId')"
+      >
+        {{activation.nazaOrderId}}
+      </div>
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('Ordre site reçu')"
+      >
+        {{findLogOrderDateByType(activation.logOrder, "reception")}}
+      </div>
+      <!-- TODO modify this with log order date -->
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('Heure de début')"
+      >
+        {{findLogOrderDateByType(activation.logOrder, "activation")}}
+      </div>
+      <div
+        class="col-md-1 detail-text"
+        [hidden]="!hasFilterTableItem('Heure ordre de fin')"
+      >
+        {{findLogOrderDateByType(activation.logOrder, "end")}}
+      </div>
+      <!-- TODO end -->
+      <div
+        class="col-md-1 detail-text"
+        *ngIf="!isCompany('dso') && !isCompany('producer')"
+        [hidden]="!hasFilterTableItem('Ref. Offre')"
+      >
+        {{activation.bidRegisteredResourceMrid}}
+      </div>
+      <div
+        class="col-md-1 constraint last-column"
+        [hidden]="!hasFilterTableItem('Tech. constraint')"
+      >
+        <app-technical-constraint
+          (click)="!!createGraph(activation)"
+          [company]="company"
+          [selectedActivation]="activation"
+          [activations]="activations"
+        >
+        </app-technical-constraint>
+      </div>
+    </div>
+    <div
+      class="activation-details-row"
+      [ngClass]="!activation.selected ? 'toggle-activation' : 'visible'"
+    >
+      <p class="graph-title">Vue générale de l'activation</p>
+      <div
+        class="btn btn-primary details-view"
+        (click)="toggleActivationDetails(activation)"
+      >
+        Accéder à la vue détaillée
+      </div>
+      <div class="v-axis">Puissance <br />(MW)</div>
+      <!-- Need to have a unique identifier to draw the graph;
+           order By Site ID is unique on each so use it as identifier for graph-->
+      <div class="graph row" id="{{activation.siteOrderId}}"></div>
+      <div class="legend-row row">
+        <div
+          class="legend"
+          [ngClass]="!isCompany('producer') ? 'legend' : 'small-legend'"
+        >
+          <div class="legend-item-pa" *ngIf="!isCompany('producer')"></div>
+          <div class="legend-text" *ngIf="!isCompany('producer')">PA</div>
+          <div class="legend-item-order"></div>
+          <div class="legend-text">Puissance</div>
+          <div class="legend-item-re"></div>
+          <div class="legend-text">Télérelevé</div>
+        </div>
+        <div class="x-axis">Temps <br />(h)</div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-spinner *ngIf="isSpinnerActive"></app-spinner>
+<ng-template #noTableRowSelected>
+  <div class="container no-row-selected">
+    Aucun champs sélectionné.
+  </div>
+</ng-template>

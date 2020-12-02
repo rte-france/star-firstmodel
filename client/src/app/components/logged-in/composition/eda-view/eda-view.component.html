@@ -1,0 +1,132 @@
+<div class="col-md-12">
+  <img
+    *ngIf="isOrganizationType('tso')"
+    (click)="redirectToDashboard()"
+    class="icon"
+    src="../../../../assets/img/arrow-left.svg"
+  />
+  <div
+    class="search-title"
+    [ngClass]="!isOrganizationType('rte') ? 'no-arrow-style' : 'arrow-style'"
+  >
+    Vue EDA - Sites
+  </div>
+  <form>
+    <div class="form-group form-inline">
+      <input
+        class="form-control search-field"
+        type="text"
+        id="search-input"
+        [(ngModel)]="searchInput"
+        placeholder="Recherchez un code EDA, un code site"
+        [formControl]="filter"
+      />
+    </div>
+    <div class="submit">
+      <img class="svg-icon" src="../../../../assets/img/icon-search.svg" />
+    </div>
+  </form>
+  <div class="eda-results-group" *ngIf="displayResults">
+    <ng-container *ngFor="let eda of edas$ | async">
+      <div class="col-md-12">
+        <div class="row">
+          <ng-container *ngIf="!eda.selected">
+            <div class="site-result col-md-2" (click)="selectEDA(eda)">
+              <ngb-highlight
+                [result]="eda.edaRegisteredResourceName"
+                [term]="filter.value"
+              >
+              </ngb-highlight>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="eda.selected">
+            <div class="unfolded-site-result col-md-2" (click)="selectEDA(eda)">
+              <div>{{ eda.edaRegisteredResourceName }}</div>
+              <div class="eda-code">{{ eda.edaRegisteredResourceMrid }}</div>
+            </div>
+            <div class="eda-sites col-md-4" *ngIf="eda.sites.length > 0">
+              <div *ngFor="let site of eda.sites">
+                <div
+                  (click)="selectSite(site, eda)"
+                  class="site-selection"
+                  [ngClass]="site.selected ? 'select' : 'unselect'"
+                >
+                  {{ site.siteName }}
+                </div>
+              </div>
+            </div>
+            <ng-container *ngIf="site && site.selected">
+              <div class="site-details col-md-5">
+                <div class="informations">
+                  Informations
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    Code site
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.objectAggregationMeteringPoint }}
+                  </div>
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    Numéro de SIRET
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.siteSIRET }}
+                  </div>
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    Lieu de Production
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.siteLocation }}
+                  </div>
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    Nom du producteur
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.producerName }}
+                  </div>
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    Type de Site
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.siteType }}
+                  </div>
+                </div>
+                <div class="code-site row">
+                  <div class="code-site-title col-md-4">
+                    BSP associé
+                  </div>
+                  <div class="code-site-result col-md-5 offset-1">
+                    {{ site.a04RegisteredResourceMrid }}
+                  </div>
+                </div>
+                <div class="code-site row" *ngIf="isOrganizationType('bsp')">
+                  <div class="code-site-title col-md-4">
+                    Code EDP
+                  </div>
+                  <div
+                    class="code-site-result col-md-5 offset-1"
+                    *ngIf="site.edp"
+                  >
+                    {{ site.edp.edpRegisteredResourceMrid }}
+                  </div>
+                </div>
+                <div class="history-link" (click)="redirectToHistory()">
+                  Consulter l'historique >
+                </div>
+              </div>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

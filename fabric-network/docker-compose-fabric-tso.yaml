@@ -1,0 +1,131 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+version: "3.7"
+services:
+  ca.tso.star.com:
+    image: hyperledger/fabric-ca:amd64-1.4.8
+    container_name: ca.tso.star.com
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.tso.star.com
+      - FABRIC_CA_SERVER_TLS_ENABLED=false
+      - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.tso.star.com-cert.pem
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/ca.tso.star.com_sk
+      - FABRIC_CA_DB_FILE=/var/hyperledger/fabric-ca-server/db/fabric-ca-server.db
+      - FABRIC_CA_CONF_FILE=/etc/hyperledger/fabric-ca-server-config/fabric-ca-server-config.yaml
+    ports:
+      - "7054:7054"
+    volumes:
+      - ../resources/conf/infra/crypto-config/peerOrganizations/tso.star.com/ca/:/etc/hyperledger/fabric-ca-server-config
+    command: sh -c 'rm $$FABRIC_CA_DB_FILE ; mkdir -p /var/hyperledger/fabric-ca-server/db ; fabric-ca-server start --ca.certfile $$FABRIC_CA_SERVER_TLS_CERTFILE --ca.keyfile $$FABRIC_CA_SERVER_TLS_KEYFILE -c $$FABRIC_CA_CONF_FILE -b admin:adminpw --db.datasource $$FABRIC_CA_DB_FILE -d'
+    networks:
+      - star
+
+  peer0.tso.star.com:
+    image: hyperledger/fabric-peer:amd64-1.4.8
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    container_name: peer0.tso.star.com
+    depends_on:
+      - cdbp0.tso.star.com
+    environment:
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      - CORE_PEER_TLS_ENABLED=false
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - BASE_DOCKER_NS=hyperledger
+      - DOCKER_NS=hyperledger
+      - ARCH=amd64
+      - PROJECT_VERSION=1.4.8
+      - BASE_VERSION=0.4.14
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=star
+      - CORE_VM_DOCKER_ATTACHSTDOUT=true
+      - CORE_PEER_ID=peer0.tso.star.com
+      - CORE_PEER_ADDRESS=peer0.tso.star.com:7051
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=cdbp0.tso.star.com:5984
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.tso.star.com:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.tso.star.com:7051
+      - CORE_PEER_LOCALMSPID=TSOMSP
+      - CORE_PEER_TLS_SERVERHOSTOVERRIDE=peer0.tso.star.com
+    volumes:
+      - /var/run/:/host/var/run/
+      - ../resources/conf/infra/crypto-config/peerOrganizations/tso.star.com/peers/peer0.tso.star.com/msp:/etc/hyperledger/fabric/msp
+      - ../resources/conf/infra/crypto-config/peerOrganizations/tso.star.com/peers/peer0.tso.star.com/tls:/etc/hyperledger/fabric/tls
+      - ../chaincode/global:/usr/src/app/chaincode/global
+      - ../resources/conf/infra/crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto-config
+    command: peer node start
+    ports:
+      - "7051:7051"
+      - "7053:7053"
+    networks:
+      - star
+
+  cdbp0.tso.star.com:
+    image: hyperledger/fabric-couchdb:amd64-0.4.14
+    container_name: cdbp0.tso.star.com
+    ports:
+      - "5984:5984"
+    networks:
+      - star
+
+  cli-peer0.tso.star.com:
+    container_name: cli-peer0.tso.star.com
+    image: hyperledger/fabric-tools:1.4.8
+    tty: true
+    stdin_open: true
+    environment:
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.tso.star.com:7051
+      - CORE_PEER_NAME=peer0.tso.star.com
+      - ORDERER_NAME=orderer.star.com
+      - CORE_PEER_LOCALMSPID=TSOMSP
+      - CORE_PEER_TLS_ENABLED=false
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/tso.star.com/peers/peer0.tso.star.com/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/tso.star.com/peers/peer0.tso.star.com/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/tso.star.com/peers/peer0.tso.star.com/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/tso.star.com/users/Admin@tso.star.com/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: >
+      bash -c " \
+        set -e; \
+        sleep 10; \
+        peer channel create -o orderer.star.com:7050 -c starnetwork -f /opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts/channel.tx --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/star.com/orderers/orderer.star.com/msp/tlscacerts/tlsca.star.com-cert.pem; \
+        echo 'starnetwork channel created!'; \
+        peer channel join -b starnetwork.block; \
+        echo 'starnetwork channel joined!'; \
+        peer channel create -o orderer.star.com:7050 -c starnetworkorder -f /opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts/channel-order.tx --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/star.com/orderers/orderer.star.com/msp/tlscacerts/tlsca.star.com-cert.pem; \
+        echo 'starnetworkorder channel created!'; \
+        peer channel join -b starnetworkorder.block; \
+        echo 'starnetworkorder channel joined!'; \
+        peer chaincode install -n global_chaincode -l node -v 1.0 -p /usr/src/app/chaincode/global; \
+        echo 'global_chaincode chaincode installed!'; \
+        peer chaincode instantiate -o orderer.star.com:7050 --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/star.com/orderers/orderer.star.com/msp/tlscacerts/tlsca.star.com-cert.pem -C starnetwork -n global_chaincode -l node -v '1.0' -c '{\"Args\":[\"\"]}'; \
+        echo 'global_chaincode chaincode instantiated!'; \
+        peer chaincode install -n order_chaincode -l node -v 1.0 -p /usr/src/app/chaincode/order; \
+        echo 'order_chaincode chaincode installed!'; \
+        peer chaincode instantiate -o orderer.star.com:7050 --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/star.com/orderers/orderer.star.com/msp/tlscacerts/tlsca.star.com-cert.pem -C starnetworkorder -n order_chaincode -l node -v '1.0' -c '{\"Args\":[\"\"]}'; \
+        echo 'order_chaincode chaincode instantiated!'; \
+        echo 'Done!'; \
+        "
+    volumes:
+      - /var/run/:/host/var/run/
+      - ../resources/conf/infra/crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+      - ../chaincode:/usr/src/app/chaincode
+      - ../resources/conf/infra/channel-artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
+    networks:
+      - star
+
+networks:
+  star:
+    name: star

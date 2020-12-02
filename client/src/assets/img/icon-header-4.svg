@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>A - Icon Header 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="A---Icon-Header-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#616161" x="0.5" y="0.5" width="12" height="12"></rect>
+        <g id="Group" transform="translate(3.500000, 3.000000)" stroke="#616161" stroke-linecap="square">
+            <path d="M0,0.5 L6,0.5" id="Line"></path>
+            <path d="M0,3.5 L6,3.5" id="Line-Copy"></path>
+            <path d="M0,6.5 L6,6.5" id="Line-Copy-2"></path>
+        </g>
+    </g>
+</svg>

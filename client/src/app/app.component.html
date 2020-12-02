@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <main
+      role="main"
+      class="main"
+      [ngStyle]="{'margin-left': loggedIn ? marginClass : '0px'}"
+    >
+      <app-header *ngIf="loggedIn"></app-header>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

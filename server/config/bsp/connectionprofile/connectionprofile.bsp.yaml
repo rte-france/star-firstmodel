@@ -1,0 +1,89 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+
+name: 'StarNetworkConsortium'
+x-type: 'hlfv1'
+x-loggingLevel: info
+
+description: 'Star'
+version: '1.0'
+client:
+  organization: 'BSP'
+  mspid: 'BSPMSP'
+  channelId: 'starnetwork'
+  channelArtifacts:
+    path: '/etc/star/channel-artifacts/'
+  credentialStore:
+    path: '/etc/star/credentials/bsp'
+  clientKey: '/etc/star/crypto-config/peerOrganizations/bsp.star.com/users/Admin@bsp.star.com/msp/keystore/Admin@bsp.star.com_sk'
+  clientCert: '/etc/star/crypto-config/peerOrganizations/bsp.star.com/users/Admin@bsp.star.com/msp/signcerts/Admin@bsp.star.com-cert.pem'
+
+  channels:
+    - id: 'starnetwork'
+      channelTx: 'channel.tx'
+
+  chaincodes:
+    - name: 'global'
+      chaincodeId: 'global_chaincode'
+      path: '/chaincode/global'
+      version: '1.0'
+      channelName: 'starnetwork'
+      instantiator: false
+
+  tls:
+    enabled: false
+    clientKey: '/etc/star/crypto-config/peerOrganizations/bsp.star.com/users/Admin@bsp.star.com/tls/client.key'
+    clientCert: '/etc/star/crypto-config/peerOrganizations/bsp.star.com/users/Admin@bsp.star.com/tls/client.crt'
+
+  connection:
+    timeout:
+      peer:
+        endorser: 120
+        eventHub: 60
+        eventReg: 3
+      orderer: 30
+
+organizations:
+  BSP:
+    mspid: BSPMSP
+    peers:
+      - peer0.third.star.com
+    certificateAuthorities:
+      - ca.bsp.star.com
+
+orderers:
+  orderer.star.com:
+    url: grpc://orderer.star.com:7050
+    urlGrpcs: grpcs://orderer.star.com:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.star.com
+    tlsCACerts:
+      path: /etc/star/crypto-config/ordererOrganizations/star.com/orderers/orderer.star.com/msp/tlscacerts/tlsca.star.com-cert.pem
+
+peers:
+  peer0.third.star.com:
+    url: grpc://peer0.third.star.com:7051
+    eventUrl: grpc://peer0.third.star.com:7053
+    urlGrpcs: grpcs://peer0.third.star.com:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.third.star.com
+    tlsCACerts:
+      path: /etc/star/crypto-config/peerOrganizations/bsp.star.com/tlsca/tlsca.bsp.star.com-cert.pem
+
+certificateAuthorities:
+  ca.bsp.star.com:
+    url: http://ca.third.star.com:7054
+    urlHttps: https://ca.third.star.com:7054
+    tlsCACerts:
+      path: /etc/star/crypto-config/peerOrganizations/bsp.star.com/tlsca/tlsca.bsp.star.com-cert.pem
+    httpOptions:
+      verify: false
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    caName: ca.bsp.star.com
+
+identity:
+  username: admin
+  password: adminpw

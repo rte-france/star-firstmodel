@@ -1,0 +1,25 @@
+<div class="col-md-12">
+  <img
+    class="icon"
+    src="../../../../assets/img/icon-header-3.svg"
+  />
+  <div class="search-title">
+    Rechercher EDA - Sites
+  </div>
+  <form>
+    <div class="form-group form-inline">
+      <input
+        [(ngModel)]="searchInput"
+        name="eda"
+        class="form-control search-field"
+        type="text"
+        placeholder="Recherchez un code EDA, un code site"
+      />
+    </div>
+    <div class="submit">
+      <div (click)="passValue()">
+        <img class="svg-icon" src="../../../../assets/img/arrow-left.svg" />
+      </div>
+    </div>
+  </form>
+</div>

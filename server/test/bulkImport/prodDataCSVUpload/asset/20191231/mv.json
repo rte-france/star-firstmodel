@@ -1,0 +1,3478 @@
+[
+  {
+    "objectAggregationMeteringPoint": "PDL00000000277784",
+    "timeIntervalStart": "1577746801",
+    "timeIntervalEnd": "1577833201",
+    "resolution": 300,
+    "timeZone": "GMT+1",
+    "pointType": "MW",
+    "timeSeries": [
+      {
+        "timeStampStart": "1577746801",
+        "quantity": "4.332",
+        "timeStampEnd": "1577747101",
+        "idPoint": "1"
+      },
+      {
+        "timeStampStart": "1577747101",
+        "quantity": "4.136",
+        "timeStampEnd": "1577747401",
+        "idPoint": "2"
+      },
+      {
+        "timeStampStart": "1577747401",
+        "quantity": "4.116",
+        "timeStampEnd": "1577747701",
+        "idPoint": "3"
+      },
+      {
+        "timeStampStart": "1577747701",
+        "quantity": "4.372",
+        "timeStampEnd": "1577748001",
+        "idPoint": "4"
+      },
+      {
+        "timeStampStart": "1577748001",
+        "quantity": "3.956",
+        "timeStampEnd": "1577748301",
+        "idPoint": "5"
+      },
+      {
+        "timeStampStart": "1577748301",
+        "quantity": "3.816",
+        "timeStampEnd": "1577748601",
+        "idPoint": "6"
+      },
+      {
+        "timeStampStart": "1577748601",
+        "quantity": "4.104",
+        "timeStampEnd": "1577748901",
+        "idPoint": "7"
+      },
+      {
+        "timeStampStart": "1577748901",
+        "quantity": "4.236",
+        "timeStampEnd": "1577749201",
+        "idPoint": "8"
+      },
+      {
+        "timeStampStart": "1577749201",
+        "quantity": "4.256",
+        "timeStampEnd": "1577749501",
+        "idPoint": "9"
+      },
+      {
+        "timeStampStart": "1577749501",
+        "quantity": "4.2",
+        "timeStampEnd": "1577749801",
+        "idPoint": "10"
+      },
+      {
+        "timeStampStart": "1577749801",
+        "quantity": "4.268",
+        "timeStampEnd": "1577750101",
+        "idPoint": "11"
+      },
+      {
+        "timeStampStart": "1577750101",
+        "quantity": "4.22",
+        "timeStampEnd": "1577750401",
+        "idPoint": "12"
+      },
+      {
+        "timeStampStart": "1577750401",
+        "quantity": "4.28",
+        "timeStampEnd": "1577750701",
+        "idPoint": "13"
+      },
+      {
+        "timeStampStart": "1577750701",
+        "quantity": "3.916",
+        "timeStampEnd": "1577751001",
+        "idPoint": "14"
+      },
+      {
+        "timeStampStart": "1577751001",
+        "quantity": "4.128",
+        "timeStampEnd": "1577751301",
+        "idPoint": "15"
+      },
+      {
+        "timeStampStart": "1577751301",
+        "quantity": "3.8",
+        "timeStampEnd": "1577751601",
+        "idPoint": "16"
+      },
+      {
+        "timeStampStart": "1577751601",
+        "quantity": "4.052",
+        "timeStampEnd": "1577751901",
+        "idPoint": "17"
+      },
+      {
+        "timeStampStart": "1577751901",
+        "quantity": "4.212",
+        "timeStampEnd": "1577752201",
+        "idPoint": "18"
+      },
+      {
+        "timeStampStart": "1577752201",
+        "quantity": "3.66",
+        "timeStampEnd": "1577752501",
+        "idPoint": "19"
+      },
+      {
+        "timeStampStart": "1577752501",
+        "quantity": "4.132",
+        "timeStampEnd": "1577752801",
+        "idPoint": "20"
+      },
+      {
+        "timeStampStart": "1577752801",
+        "quantity": "3.824",
+        "timeStampEnd": "1577753101",
+        "idPoint": "21"
+      },
+      {
+        "timeStampStart": "1577753101",
+        "quantity": "4.168",
+        "timeStampEnd": "1577753401",
+        "idPoint": "22"
+      },
+      {
+        "timeStampStart": "1577753401",
+        "quantity": "4.336",
+        "timeStampEnd": "1577753701",
+        "idPoint": "23"
+      },
+      {
+        "timeStampStart": "1577753701",
+        "quantity": "3.868",
+        "timeStampEnd": "1577754001",
+        "idPoint": "24"
+      },
+      {
+        "timeStampStart": "1577754001",
+        "quantity": "3.62",
+        "timeStampEnd": "1577754301",
+        "idPoint": "25"
+      },
+      {
+        "timeStampStart": "1577754301",
+        "quantity": "4.076",
+        "timeStampEnd": "1577754601",
+        "idPoint": "26"
+      },
+      {
+        "timeStampStart": "1577754601",
+        "quantity": "4.18",
+        "timeStampEnd": "1577754901",
+        "idPoint": "27"
+      },
+      {
+        "timeStampStart": "1577754901",
+        "quantity": "4.24",
+        "timeStampEnd": "1577755201",
+        "idPoint": "28"
+      },
+      {
+        "timeStampStart": "1577755201",
+        "quantity": "4",
+        "timeStampEnd": "1577755501",
+        "idPoint": "29"
+      },
+      {
+        "timeStampStart": "1577755501",
+        "quantity": "4.04",
+        "timeStampEnd": "1577755801",
+        "idPoint": "30"
+      },
+      {
+        "timeStampStart": "1577755801",
+        "quantity": "3.868",
+        "timeStampEnd": "1577756101",
+        "idPoint": "31"
+      },
+      {
+        "timeStampStart": "1577756101",
+        "quantity": "4.184",
+        "timeStampEnd": "1577756401",
+        "idPoint": "32"
+      },
+      {
+        "timeStampStart": "1577756401",
+        "quantity": "3.884",
+        "timeStampEnd": "1577756701",
+        "idPoint": "33"
+      },
+      {
+        "timeStampStart": "1577756701",
+        "quantity": "4.032",
+        "timeStampEnd": "1577757001",
+        "idPoint": "34"
+      },
+      {
+        "timeStampStart": "1577757001",
+        "quantity": "4.312",
+        "timeStampEnd": "1577757301",
+        "idPoint": "35"
+      },
+      {
+        "timeStampStart": "1577757301",
+        "quantity": "3.944",
+        "timeStampEnd": "1577757601",
+        "idPoint": "36"
+      },
+      {
+        "timeStampStart": "1577757601",
+        "quantity": "4.276",
+        "timeStampEnd": "1577757901",
+        "idPoint": "37"
+      },
+      {
+        "timeStampStart": "1577757901",
+        "quantity": "3.876",
+        "timeStampEnd": "1577758201",
+        "idPoint": "38"
+      },
+      {
+        "timeStampStart": "1577758201",
+        "quantity": "3.916",
+        "timeStampEnd": "1577758501",
+        "idPoint": "39"
+      },
+      {
+        "timeStampStart": "1577758501",
+        "quantity": "4.312",
+        "timeStampEnd": "1577758801",
+        "idPoint": "40"
+      },
+      {
+        "timeStampStart": "1577758801",
+        "quantity": "3.708",
+        "timeStampEnd": "1577759101",
+        "idPoint": "41"
+      },
+      {
+        "timeStampStart": "1577759101",
+        "quantity": "4.256",
+        "timeStampEnd": "1577759401",
+        "idPoint": "42"
+      },
+      {
+        "timeStampStart": "1577759401",
+        "quantity": "4.26",
+        "timeStampEnd": "1577759701",
+        "idPoint": "43"
+      },
+      {
+        "timeStampStart": "1577759701",
+        "quantity": "3.952",
+        "timeStampEnd": "1577760001",
+        "idPoint": "44"
+      },
+      {
+        "timeStampStart": "1577760001",
+        "quantity": "3.612",
+        "timeStampEnd": "1577760301",
+        "idPoint": "45"
+      },
+      {
+        "timeStampStart": "1577760301",
+        "quantity": "3.616",
+        "timeStampEnd": "1577760601",
+        "idPoint": "46"
+      },
+      {
+        "timeStampStart": "1577760601",
+        "quantity": "3.936",
+        "timeStampEnd": "1577760901",
+        "idPoint": "47"
+      },
+      {
+        "timeStampStart": "1577760901",
+        "quantity": "4.076",
+        "timeStampEnd": "1577761201",
+        "idPoint": "48"
+      },
+      {
+        "timeStampStart": "1577761201",
+        "quantity": "3.84",
+        "timeStampEnd": "1577761501",
+        "idPoint": "49"
+      },
+      {
+        "timeStampStart": "1577761501",
+        "quantity": "4.392",
+        "timeStampEnd": "1577761801",
+        "idPoint": "50"
+      },
+      {
+        "timeStampStart": "1577761801",
+        "quantity": "4.06",
+        "timeStampEnd": "1577762101",
+        "idPoint": "51"
+      },
+      {
+        "timeStampStart": "1577762101",
+        "quantity": "4.192",
+        "timeStampEnd": "1577762401",
+        "idPoint": "52"
+      },
+      {
+        "timeStampStart": "1577762401",
+        "quantity": "4.104",
+        "timeStampEnd": "1577762701",
+        "idPoint": "53"
+      },
+      {
+        "timeStampStart": "1577762701",
+        "quantity": "3.84",
+        "timeStampEnd": "1577763001",
+        "idPoint": "54"
+      },
+      {
+        "timeStampStart": "1577763001",
+        "quantity": "3.716",
+        "timeStampEnd": "1577763301",
+        "idPoint": "55"
+      },
+      {
+        "timeStampStart": "1577763301",
+        "quantity": "3.788",
+        "timeStampEnd": "1577763601",
+        "idPoint": "56"
+      },
+      {
+        "timeStampStart": "1577763601",
+        "quantity": "3.748",
+        "timeStampEnd": "1577763901",
+        "idPoint": "57"
+      },
+      {
+        "timeStampStart": "1577763901",
+        "quantity": "3.732",
+        "timeStampEnd": "1577764201",
+        "idPoint": "58"
+      },
+      {
+        "timeStampStart": "1577764201",
+        "quantity": "3.676",
+        "timeStampEnd": "1577764501",
+        "idPoint": "59"
+      },
+      {
+        "timeStampStart": "1577764501",
+        "quantity": "4.38",
+        "timeStampEnd": "1577764801",
+        "idPoint": "60"
+      },
+      {
+        "timeStampStart": "1577764801",
+        "quantity": "4.208",
+        "timeStampEnd": "1577765101",
+        "idPoint": "61"
+      },
+      {
+        "timeStampStart": "1577765101",
+        "quantity": "4.08",
+        "timeStampEnd": "1577765401",
+        "idPoint": "62"
+      },
+      {
+        "timeStampStart": "1577765401",
+        "quantity": "3.608",
+        "timeStampEnd": "1577765701",
+        "idPoint": "63"
+      },
+      {
+        "timeStampStart": "1577765701",
+        "quantity": "4.004",
+        "timeStampEnd": "1577766001",
+        "idPoint": "64"
+      },
+      {
+        "timeStampStart": "1577766001",
+        "quantity": "3.676",
+        "timeStampEnd": "1577766301",
+        "idPoint": "65"
+      },
+      {
+        "timeStampStart": "1577766301",
+        "quantity": "4.344",
+        "timeStampEnd": "1577766601",
+        "idPoint": "66"
+      },
+      {
+        "timeStampStart": "1577766601",
+        "quantity": "3.752",
+        "timeStampEnd": "1577766901",
+        "idPoint": "67"
+      },
+      {
+        "timeStampStart": "1577766901",
+        "quantity": "4.208",
+        "timeStampEnd": "1577767201",
+        "idPoint": "68"
+      },
+      {
+        "timeStampStart": "1577767201",
+        "quantity": "4.156",
+        "timeStampEnd": "1577767501",
+        "idPoint": "69"
+      },
+      {
+        "timeStampStart": "1577767501",
+        "quantity": "3.736",
+        "timeStampEnd": "1577767801",
+        "idPoint": "70"
+      },
+      {
+        "timeStampStart": "1577767801",
+        "quantity": "3.676",
+        "timeStampEnd": "1577768101",
+        "idPoint": "71"
+      },
+      {
+        "timeStampStart": "1577768101",
+        "quantity": "3.664",
+        "timeStampEnd": "1577768401",
+        "idPoint": "72"
+      },
+      {
+        "timeStampStart": "1577768401",
+        "quantity": "3.688",
+        "timeStampEnd": "1577768701",
+        "idPoint": "73"
+      },
+      {
+        "timeStampStart": "1577768701",
+        "quantity": "3.968",
+        "timeStampEnd": "1577769001",
+        "idPoint": "74"
+      },
+      {
+        "timeStampStart": "1577769001",
+        "quantity": "4.008",
+        "timeStampEnd": "1577769301",
+        "idPoint": "75"
+      },
+      {
+        "timeStampStart": "1577769301",
+        "quantity": "4.32",
+        "timeStampEnd": "1577769601",
+        "idPoint": "76"
+      },
+      {
+        "timeStampStart": "1577769601",
+        "quantity": "3.916",
+        "timeStampEnd": "1577769901",
+        "idPoint": "77"
+      },
+      {
+        "timeStampStart": "1577769901",
+        "quantity": "4.1",
+        "timeStampEnd": "1577770201",
+        "idPoint": "78"
+      },
+      {
+        "timeStampStart": "1577770201",
+        "quantity": "3.952",
+        "timeStampEnd": "1577770501",
+        "idPoint": "79"
+      },
+      {
+        "timeStampStart": "1577770501",
+        "quantity": "3.82",
+        "timeStampEnd": "1577770801",
+        "idPoint": "80"
+      },
+      {
+        "timeStampStart": "1577770801",
+        "quantity": "4.104",
+        "timeStampEnd": "1577771101",
+        "idPoint": "81"
+      },
+      {
+        "timeStampStart": "1577771101",
+        "quantity": "4.024",
+        "timeStampEnd": "1577771401",
+        "idPoint": "82"
+      },
+      {
+        "timeStampStart": "1577771401",
+        "quantity": "3.716",
+        "timeStampEnd": "1577771701",
+        "idPoint": "83"
+      },
+      {
+        "timeStampStart": "1577771701",
+        "quantity": "3.616",
+        "timeStampEnd": "1577772001",
+        "idPoint": "84"
+      },
+      {
+        "timeStampStart": "1577772001",
+        "quantity": "3.976",
+        "timeStampEnd": "1577772301",
+        "idPoint": "85"
+      },
+      {
+        "timeStampStart": "1577772301",
+        "quantity": "4.148",
+        "timeStampEnd": "1577772601",
+        "idPoint": "86"
+      },
+      {
+        "timeStampStart": "1577772601",
+        "quantity": "4.012",
+        "timeStampEnd": "1577772901",
+        "idPoint": "87"
+      },
+      {
+        "timeStampStart": "1577772901",
+        "quantity": "4.12",
+        "timeStampEnd": "1577773201",
+        "idPoint": "88"
+      },
+      {
+        "timeStampStart": "1577773201",
+        "quantity": "4.116",
+        "timeStampEnd": "1577773501",
+        "idPoint": "89"
+      },
+      {
+        "timeStampStart": "1577773501",
+        "quantity": "3.98",
+        "timeStampEnd": "1577773801",
+        "idPoint": "90"
+      },
+      {
+        "timeStampStart": "1577773801",
+        "quantity": "3.684",
+        "timeStampEnd": "1577774101",
+        "idPoint": "91"
+      },
+      {
+        "timeStampStart": "1577774101",
+        "quantity": "4.252",
+        "timeStampEnd": "1577774401",
+        "idPoint": "92"
+      },
+      {
+        "timeStampStart": "1577774401",
+        "quantity": "4.044",
+        "timeStampEnd": "1577774701",
+        "idPoint": "93"
+      },
+      {
+        "timeStampStart": "1577774701",
+        "quantity": "3.656",
+        "timeStampEnd": "1577775001",
+        "idPoint": "94"
+      },
+      {
+        "timeStampStart": "1577775001",
+        "quantity": "4.34",
+        "timeStampEnd": "1577775301",
+        "idPoint": "95"
+      },
+      {
+        "timeStampStart": "1577775301",
+        "quantity": "3.896",
+        "timeStampEnd": "1577775601",
+        "idPoint": "96"
+      },
+      {
+        "timeStampStart": "1577775601",
+        "quantity": "4.056",
+        "timeStampEnd": "1577775901",
+        "idPoint": "97"
+      },
+      {
+        "timeStampStart": "1577775901",
+        "quantity": "3.896",
+        "timeStampEnd": "1577776201",
+        "idPoint": "98"
+      },
+      {
+        "timeStampStart": "1577776201",
+        "quantity": "4.28",
+        "timeStampEnd": "1577776501",
+        "idPoint": "99"
+      },
+      {
+        "timeStampStart": "1577776501",
+        "quantity": "3.692",
+        "timeStampEnd": "1577776801",
+        "idPoint": "100"
+      },
+      {
+        "timeStampStart": "1577776801",
+        "quantity": "3.796",
+        "timeStampEnd": "1577777101",
+        "idPoint": "101"
+      },
+      {
+        "timeStampStart": "1577777101",
+        "quantity": "3.688",
+        "timeStampEnd": "1577777401",
+        "idPoint": "102"
+      },
+      {
+        "timeStampStart": "1577777401",
+        "quantity": "3.924",
+        "timeStampEnd": "1577777701",
+        "idPoint": "103"
+      },
+      {
+        "timeStampStart": "1577777701",
+        "quantity": "4.38",
+        "timeStampEnd": "1577778001",
+        "idPoint": "104"
+      },
+      {
+        "timeStampStart": "1577778001",
+        "quantity": "3.824",
+        "timeStampEnd": "1577778301",
+        "idPoint": "105"
+      },
+      {
+        "timeStampStart": "1577778301",
+        "quantity": "4.312",
+        "timeStampEnd": "1577778601",
+        "idPoint": "106"
+      },
+      {
+        "timeStampStart": "1577778601",
+        "quantity": "3.84",
+        "timeStampEnd": "1577778901",
+        "idPoint": "107"
+      },
+      {
+        "timeStampStart": "1577778901",
+        "quantity": "3.92",
+        "timeStampEnd": "1577779201",
+        "idPoint": "108"
+      },
+      {
+        "timeStampStart": "1577779201",
+        "quantity": "4.144",
+        "timeStampEnd": "1577779501",
+        "idPoint": "109"
+      },
+      {
+        "timeStampStart": "1577779501",
+        "quantity": "3.912",
+        "timeStampEnd": "1577779801",
+        "idPoint": "110"
+      },
+      {
+        "timeStampStart": "1577779801",
+        "quantity": "3.892",
+        "timeStampEnd": "1577780101",
+        "idPoint": "111"
+      },
+      {
+        "timeStampStart": "1577780101",
+        "quantity": "4.16",
+        "timeStampEnd": "1577780401",
+        "idPoint": "112"
+      },
+      {
+        "timeStampStart": "1577780401",
+        "quantity": "3.8",
+        "timeStampEnd": "1577780701",
+        "idPoint": "113"
+      },
+      {
+        "timeStampStart": "1577780701",
+        "quantity": "4.32",
+        "timeStampEnd": "1577781001",
+        "idPoint": "114"
+      },
+      {
+        "timeStampStart": "1577781001",
+        "quantity": "3.692",
+        "timeStampEnd": "1577781301",
+        "idPoint": "115"
+      },
+      {
+        "timeStampStart": "1577781301",
+        "quantity": "3.724",
+        "timeStampEnd": "1577781601",
+        "idPoint": "116"
+      },
+      {
+        "timeStampStart": "1577781601",
+        "quantity": "4.34",
+        "timeStampEnd": "1577781901",
+        "idPoint": "117"
+      },
+      {
+        "timeStampStart": "1577781901",
+        "quantity": "4.284",
+        "timeStampEnd": "1577782201",
+        "idPoint": "118"
+      },
+      {
+        "timeStampStart": "1577782201",
+        "quantity": "3.944",
+        "timeStampEnd": "1577782501",
+        "idPoint": "119"
+      },
+      {
+        "timeStampStart": "1577782501",
+        "quantity": "4.144",
+        "timeStampEnd": "1577782801",
+        "idPoint": "120"
+      },
+      {
+        "timeStampStart": "1577782801",
+        "quantity": "3.852",
+        "timeStampEnd": "1577783101",
+        "idPoint": "121"
+      },
+      {
+        "timeStampStart": "1577783101",
+        "quantity": "3.952",
+        "timeStampEnd": "1577783401",
+        "idPoint": "122"
+      },
+      {
+        "timeStampStart": "1577783401",
+        "quantity": "4.2",
+        "timeStampEnd": "1577783701",
+        "idPoint": "123"
+      },
+      {
+        "timeStampStart": "1577783701",
+        "quantity": "3.708",
+        "timeStampEnd": "1577784001",
+        "idPoint": "124"
+      },
+      {
+        "timeStampStart": "1577784001",
+        "quantity": "3.912",
+        "timeStampEnd": "1577784301",
+        "idPoint": "125"
+      },
+      {
+        "timeStampStart": "1577784301",
+        "quantity": "4.372",
+        "timeStampEnd": "1577784601",
+        "idPoint": "126"
+      },
+      {
+        "timeStampStart": "1577784601",
+        "quantity": "4.208",
+        "timeStampEnd": "1577784901",
+        "idPoint": "127"
+      },
+      {
+        "timeStampStart": "1577784901",
+        "quantity": "3.844",
+        "timeStampEnd": "1577785201",
+        "idPoint": "128"
+      },
+      {
+        "timeStampStart": "1577785201",
+        "quantity": "3.712",
+        "timeStampEnd": "1577785501",
+        "idPoint": "129"
+      },
+      {
+        "timeStampStart": "1577785501",
+        "quantity": "4.292",
+        "timeStampEnd": "1577785801",
+        "idPoint": "130"
+      },
+      {
+        "timeStampStart": "1577785801",
+        "quantity": "4.336",
+        "timeStampEnd": "1577786101",
+        "idPoint": "131"
+      },
+      {
+        "timeStampStart": "1577786101",
+        "quantity": "3.94",
+        "timeStampEnd": "1577786401",
+        "idPoint": "132"
+      },
+      {
+        "timeStampStart": "1577786401",
+        "quantity": "3.616",
+        "timeStampEnd": "1577786701",
+        "idPoint": "133"
+      },
+      {
+        "timeStampStart": "1577786701",
+        "quantity": "3.86",
+        "timeStampEnd": "1577787001",
+        "idPoint": "134"
+      },
+      {
+        "timeStampStart": "1577787001",
+        "quantity": "3.624",
+        "timeStampEnd": "1577787301",
+        "idPoint": "135"
+      },
+      {
+        "timeStampStart": "1577787301",
+        "quantity": "3.96",
+        "timeStampEnd": "1577787601",
+        "idPoint": "136"
+      },
+      {
+        "timeStampStart": "1577787601",
+        "quantity": "4.052",
+        "timeStampEnd": "1577787901",
+        "idPoint": "137"
+      },
+      {
+        "timeStampStart": "1577787901",
+        "quantity": "4.38",
+        "timeStampEnd": "1577788201",
+        "idPoint": "138"
+      },
+      {
+        "timeStampStart": "1577788201",
+        "quantity": "4.208",
+        "timeStampEnd": "1577788501",
+        "idPoint": "139"
+      },
+      {
+        "timeStampStart": "1577788501",
+        "quantity": "4.272",
+        "timeStampEnd": "1577788801",
+        "idPoint": "140"
+      },
+      {
+        "timeStampStart": "1577788801",
+        "quantity": "3.792",
+        "timeStampEnd": "1577789101",
+        "idPoint": "141"
+      },
+      {
+        "timeStampStart": "1577789101",
+        "quantity": "4.392",
+        "timeStampEnd": "1577789401",
+        "idPoint": "142"
+      },
+      {
+        "timeStampStart": "1577789401",
+        "quantity": "4.384",
+        "timeStampEnd": "1577789701",
+        "idPoint": "143"
+      },
+      {
+        "timeStampStart": "1577789701",
+        "quantity": "4.164",
+        "timeStampEnd": "1577790001",
+        "idPoint": "144"
+      },
+      {
+        "timeStampStart": "1577790001",
+        "quantity": "3.936",
+        "timeStampEnd": "1577790301",
+        "idPoint": "145"
+      },
+      {
+        "timeStampStart": "1577790301",
+        "quantity": "4.072",
+        "timeStampEnd": "1577790601",
+        "idPoint": "146"
+      },
+      {
+        "timeStampStart": "1577790601",
+        "quantity": "4.38",
+        "timeStampEnd": "1577790901",
+        "idPoint": "147"
+      },
+      {
+        "timeStampStart": "1577790901",
+        "quantity": "4.184",
+        "timeStampEnd": "1577791201",
+        "idPoint": "148"
+      },
+      {
+        "timeStampStart": "1577791201",
+        "quantity": "3.932",
+        "timeStampEnd": "1577791501",
+        "idPoint": "149"
+      },
+      {
+        "timeStampStart": "1577791501",
+        "quantity": "3.828",
+        "timeStampEnd": "1577791801",
+        "idPoint": "150"
+      },
+      {
+        "timeStampStart": "1577791801",
+        "quantity": "3.956",
+        "timeStampEnd": "1577792101",
+        "idPoint": "151"
+      },
+      {
+        "timeStampStart": "1577792101",
+        "quantity": "3.948",
+        "timeStampEnd": "1577792401",
+        "idPoint": "152"
+      },
+      {
+        "timeStampStart": "1577792401",
+        "quantity": "3.796",
+        "timeStampEnd": "1577792701",
+        "idPoint": "153"
+      },
+      {
+        "timeStampStart": "1577792701",
+        "quantity": "4.236",
+        "timeStampEnd": "1577793001",
+        "idPoint": "154"
+      },
+      {
+        "timeStampStart": "1577793001",
+        "quantity": "3.828",
+        "timeStampEnd": "1577793301",
+        "idPoint": "155"
+      },
+      {
+        "timeStampStart": "1577793301",
+        "quantity": "3.788",
+        "timeStampEnd": "1577793601",
+        "idPoint": "156"
+      },
+      {
+        "timeStampStart": "1577793601",
+        "quantity": "3.912",
+        "timeStampEnd": "1577793901",
+        "idPoint": "157"
+      },
+      {
+        "timeStampStart": "1577793901",
+        "quantity": "3.98",
+        "timeStampEnd": "1577794201",
+        "idPoint": "158"
+      },
+      {
+        "timeStampStart": "1577794201",
+        "quantity": "4.396",
+        "timeStampEnd": "1577794501",
+        "idPoint": "159"
+      },
+      {
+        "timeStampStart": "1577794501",
+        "quantity": "4.224",
+        "timeStampEnd": "1577794801",
+        "idPoint": "160"
+      },
+      {
+        "timeStampStart": "1577794801",
+        "quantity": "3.876",
+        "timeStampEnd": "1577795101",
+        "idPoint": "161"
+      },
+      {
+        "timeStampStart": "1577795101",
+        "quantity": "3.896",
+        "timeStampEnd": "1577795401",
+        "idPoint": "162"
+      },
+      {
+        "timeStampStart": "1577795401",
+        "quantity": "3.832",
+        "timeStampEnd": "1577795701",
+        "idPoint": "163"
+      },
+      {
+        "timeStampStart": "1577795701",
+        "quantity": "3.912",
+        "timeStampEnd": "1577796001",
+        "idPoint": "164"
+      },
+      {
+        "timeStampStart": "1577796001",
+        "quantity": "4.208",
+        "timeStampEnd": "1577796301",
+        "idPoint": "165"
+      },
+      {
+        "timeStampStart": "1577796301",
+        "quantity": "3.62",
+        "timeStampEnd": "1577796601",
+        "idPoint": "166"
+      },
+      {
+        "timeStampStart": "1577796601",
+        "quantity": "4.368",
+        "timeStampEnd": "1577796901",
+        "idPoint": "167"
+      },
+      {
+        "timeStampStart": "1577796901",
+        "quantity": "4.128",
+        "timeStampEnd": "1577797201",
+        "idPoint": "168"
+      },
+      {
+        "timeStampStart": "1577797201",
+        "quantity": "3.92",
+        "timeStampEnd": "1577797501",
+        "idPoint": "169"
+      },
+      {
+        "timeStampStart": "1577797501",
+        "quantity": "3.896",
+        "timeStampEnd": "1577797801",
+        "idPoint": "170"
+      },
+      {
+        "timeStampStart": "1577797801",
+        "quantity": "3.624",
+        "timeStampEnd": "1577798101",
+        "idPoint": "171"
+      },
+      {
+        "timeStampStart": "1577798101",
+        "quantity": "3.64",
+        "timeStampEnd": "1577798401",
+        "idPoint": "172"
+      },
+      {
+        "timeStampStart": "1577798401",
+        "quantity": "4.368",
+        "timeStampEnd": "1577798701",
+        "idPoint": "173"
+      },
+      {
+        "timeStampStart": "1577798701",
+        "quantity": "3.728",
+        "timeStampEnd": "1577799001",
+        "idPoint": "174"
+      },
+      {
+        "timeStampStart": "1577799001",
+        "quantity": "3.928",
+        "timeStampEnd": "1577799301",
+        "idPoint": "175"
+      },
+      {
+        "timeStampStart": "1577799301",
+        "quantity": "3.6",
+        "timeStampEnd": "1577799601",
+        "idPoint": "176"
+      },
+      {
+        "timeStampStart": "1577799601",
+        "quantity": "3.724",
+        "timeStampEnd": "1577799901",
+        "idPoint": "177"
+      },
+      {
+        "timeStampStart": "1577799901",
+        "quantity": "4.288",
+        "timeStampEnd": "1577800201",
+        "idPoint": "178"
+      },
+      {
+        "timeStampStart": "1577800201",
+        "quantity": "3.656",
+        "timeStampEnd": "1577800501",
+        "idPoint": "179"
+      },
+      {
+        "timeStampStart": "1577800501",
+        "quantity": "4.112",
+        "timeStampEnd": "1577800801",
+        "idPoint": "180"
+      },
+      {
+        "timeStampStart": "1577800801",
+        "quantity": "4.392",
+        "timeStampEnd": "1577801101",
+        "idPoint": "181"
+      },
+      {
+        "timeStampStart": "1577801101",
+        "quantity": "4.008",
+        "timeStampEnd": "1577801401",
+        "idPoint": "182"
+      },
+      {
+        "timeStampStart": "1577801401",
+        "quantity": "3.836",
+        "timeStampEnd": "1577801701",
+        "idPoint": "183"
+      },
+      {
+        "timeStampStart": "1577801701",
+        "quantity": "3.64",
+        "timeStampEnd": "1577802001",
+        "idPoint": "184"
+      },
+      {
+        "timeStampStart": "1577802001",
+        "quantity": "4.028",
+        "timeStampEnd": "1577802301",
+        "idPoint": "185"
+      },
+      {
+        "timeStampStart": "1577802301",
+        "quantity": "4.18",
+        "timeStampEnd": "1577802601",
+        "idPoint": "186"
+      },
+      {
+        "timeStampStart": "1577802601",
+        "quantity": "4.252",
+        "timeStampEnd": "1577802901",
+        "idPoint": "187"
+      },
+      {
+        "timeStampStart": "1577802901",
+        "quantity": "4.336",
+        "timeStampEnd": "1577803201",
+        "idPoint": "188"
+      },
+      {
+        "timeStampStart": "1577803201",
+        "quantity": "3.752",
+        "timeStampEnd": "1577803501",
+        "idPoint": "189"
+      },
+      {
+        "timeStampStart": "1577803501",
+        "quantity": "3.74",
+        "timeStampEnd": "1577803801",
+        "idPoint": "190"
+      },
+      {
+        "timeStampStart": "1577803801",
+        "quantity": "3.948",
+        "timeStampEnd": "1577804101",
+        "idPoint": "191"
+      },
+      {
+        "timeStampStart": "1577804101",
+        "quantity": "4.276",
+        "timeStampEnd": "1577804401",
+        "idPoint": "192"
+      },
+      {
+        "timeStampStart": "1577804401",
+        "quantity": "3.876",
+        "timeStampEnd": "1577804701",
+        "idPoint": "193"
+      },
+      {
+        "timeStampStart": "1577804701",
+        "quantity": "4.332",
+        "timeStampEnd": "1577805001",
+        "idPoint": "194"
+      },
+      {
+        "timeStampStart": "1577805001",
+        "quantity": "3.624",
+        "timeStampEnd": "1577805301",
+        "idPoint": "195"
+      },
+      {
+        "timeStampStart": "1577805301",
+        "quantity": "3.712",
+        "timeStampEnd": "1577805601",
+        "idPoint": "196"
+      },
+      {
+        "timeStampStart": "1577805601",
+        "quantity": "3.8",
+        "timeStampEnd": "1577805901",
+        "idPoint": "197"
+      },
+      {
+        "timeStampStart": "1577805901",
+        "quantity": "4.304",
+        "timeStampEnd": "1577806201",
+        "idPoint": "198"
+      },
+      {
+        "timeStampStart": "1577806201",
+        "quantity": "4.124",
+        "timeStampEnd": "1577806501",
+        "idPoint": "199"
+      },
+      {
+        "timeStampStart": "1577806501",
+        "quantity": "4.396",
+        "timeStampEnd": "1577806801",
+        "idPoint": "200"
+      },
+      {
+        "timeStampStart": "1577806801",
+        "quantity": "4.056",
+        "timeStampEnd": "1577807101",
+        "idPoint": "201"
+      },
+      {
+        "timeStampStart": "1577807101",
+        "quantity": "4.052",
+        "timeStampEnd": "1577807401",
+        "idPoint": "202"
+      },
+      {
+        "timeStampStart": "1577807401",
+        "quantity": "4.056",
+        "timeStampEnd": "1577807701",
+        "idPoint": "203"
+      },
+      {
+        "timeStampStart": "1577807701",
+        "quantity": "3.832",
+        "timeStampEnd": "1577808001",
+        "idPoint": "204"
+      },
+      {
+        "timeStampStart": "1577808001",
+        "quantity": "4.148",
+        "timeStampEnd": "1577808301",
+        "idPoint": "205"
+      },
+      {
+        "timeStampStart": "1577808301",
+        "quantity": "4.072",
+        "timeStampEnd": "1577808601",
+        "idPoint": "206"
+      },
+      {
+        "timeStampStart": "1577808601",
+        "quantity": "4.324",
+        "timeStampEnd": "1577808901",
+        "idPoint": "207"
+      },
+      {
+        "timeStampStart": "1577808901",
+        "quantity": "3.82",
+        "timeStampEnd": "1577809201",
+        "idPoint": "208"
+      },
+      {
+        "timeStampStart": "1577809201",
+        "quantity": "3.704",
+        "timeStampEnd": "1577809501",
+        "idPoint": "209"
+      },
+      {
+        "timeStampStart": "1577809501",
+        "quantity": "3.64",
+        "timeStampEnd": "1577809801",
+        "idPoint": "210"
+      },
+      {
+        "timeStampStart": "1577809801",
+        "quantity": "3.612",
+        "timeStampEnd": "1577810101",
+        "idPoint": "211"
+      },
+      {
+        "timeStampStart": "1577810101",
+        "quantity": "3.628",
+        "timeStampEnd": "1577810401",
+        "idPoint": "212"
+      },
+      {
+        "timeStampStart": "1577810401",
+        "quantity": "3.916",
+        "timeStampEnd": "1577810701",
+        "idPoint": "213"
+      },
+      {
+        "timeStampStart": "1577810701",
+        "quantity": "4.104",
+        "timeStampEnd": "1577811001",
+        "idPoint": "214"
+      },
+      {
+        "timeStampStart": "1577811001",
+        "quantity": "3.796",
+        "timeStampEnd": "1577811301",
+        "idPoint": "215"
+      },
+      {
+        "timeStampStart": "1577811301",
+        "quantity": "4.072",
+        "timeStampEnd": "1577811601",
+        "idPoint": "216"
+      },
+      {
+        "timeStampStart": "1577811601",
+        "quantity": "4.216",
+        "timeStampEnd": "1577811901",
+        "idPoint": "217"
+      },
+      {
+        "timeStampStart": "1577811901",
+        "quantity": "3.82",
+        "timeStampEnd": "1577812201",
+        "idPoint": "218"
+      },
+      {
+        "timeStampStart": "1577812201",
+        "quantity": "3.872",
+        "timeStampEnd": "1577812501",
+        "idPoint": "219"
+      },
+      {
+        "timeStampStart": "1577812501",
+        "quantity": "4.076",
+        "timeStampEnd": "1577812801",
+        "idPoint": "220"
+      },
+      {
+        "timeStampStart": "1577812801",
+        "quantity": "3.98",
+        "timeStampEnd": "1577813101",
+        "idPoint": "221"
+      },
+      {
+        "timeStampStart": "1577813101",
+        "quantity": "4.064",
+        "timeStampEnd": "1577813401",
+        "idPoint": "222"
+      },
+      {
+        "timeStampStart": "1577813401",
+        "quantity": "4.08",
+        "timeStampEnd": "1577813701",
+        "idPoint": "223"
+      },
+      {
+        "timeStampStart": "1577813701",
+        "quantity": "4.368",
+        "timeStampEnd": "1577814001",
+        "idPoint": "224"
+      },
+      {
+        "timeStampStart": "1577814001",
+        "quantity": "4.112",
+        "timeStampEnd": "1577814301",
+        "idPoint": "225"
+      },
+      {
+        "timeStampStart": "1577814301",
+        "quantity": "3.968",
+        "timeStampEnd": "1577814601",
+        "idPoint": "226"
+      },
+      {
+        "timeStampStart": "1577814601",
+        "quantity": "4.32",
+        "timeStampEnd": "1577814901",
+        "idPoint": "227"
+      },
+      {
+        "timeStampStart": "1577814901",
+        "quantity": "3.872",
+        "timeStampEnd": "1577815201",
+        "idPoint": "228"
+      },
+      {
+        "timeStampStart": "1577815201",
+        "quantity": "3.664",
+        "timeStampEnd": "1577815501",
+        "idPoint": "229"
+      },
+      {
+        "timeStampStart": "1577815501",
+        "quantity": "3.912",
+        "timeStampEnd": "1577815801",
+        "idPoint": "230"
+      },
+      {
+        "timeStampStart": "1577815801",
+        "quantity": "4.1",
+        "timeStampEnd": "1577816101",
+        "idPoint": "231"
+      },
+      {
+        "timeStampStart": "1577816101",
+        "quantity": "3.644",
+        "timeStampEnd": "1577816401",
+        "idPoint": "232"
+      },
+      {
+        "timeStampStart": "1577816401",
+        "quantity": "3.644",
+        "timeStampEnd": "1577816701",
+        "idPoint": "233"
+      },
+      {
+        "timeStampStart": "1577816701",
+        "quantity": "3.92",
+        "timeStampEnd": "1577817001",
+        "idPoint": "234"
+      },
+      {
+        "timeStampStart": "1577817001",
+        "quantity": "3.94",
+        "timeStampEnd": "1577817301",
+        "idPoint": "235"
+      },
+      {
+        "timeStampStart": "1577817301",
+        "quantity": "3.692",
+        "timeStampEnd": "1577817601",
+        "idPoint": "236"
+      },
+      {
+        "timeStampStart": "1577817601",
+        "quantity": "4.32",
+        "timeStampEnd": "1577817901",
+        "idPoint": "237"
+      },
+      {
+        "timeStampStart": "1577817901",
+        "quantity": "3.932",
+        "timeStampEnd": "1577818201",
+        "idPoint": "238"
+      },
+      {
+        "timeStampStart": "1577818201",
+        "quantity": "4.388",
+        "timeStampEnd": "1577818501",
+        "idPoint": "239"
+      },
+      {
+        "timeStampStart": "1577818501",
+        "quantity": "4.288",
+        "timeStampEnd": "1577818801",
+        "idPoint": "240"
+      },
+      {
+        "timeStampStart": "1577818801",
+        "quantity": "3.72",
+        "timeStampEnd": "1577819101",
+        "idPoint": "241"
+      },
+      {
+        "timeStampStart": "1577819101",
+        "quantity": "3.604",
+        "timeStampEnd": "1577819401",
+        "idPoint": "242"
+      },
+      {
+        "timeStampStart": "1577819401",
+        "quantity": "4.2",
+        "timeStampEnd": "1577819701",
+        "idPoint": "243"
+      },
+      {
+        "timeStampStart": "1577819701",
+        "quantity": "4.148",
+        "timeStampEnd": "1577820001",
+        "idPoint": "244"
+      },
+      {
+        "timeStampStart": "1577820001",
+        "quantity": "3.636",
+        "timeStampEnd": "1577820301",
+        "idPoint": "245"
+      },
+      {
+        "timeStampStart": "1577820301",
+        "quantity": "4.252",
+        "timeStampEnd": "1577820601",
+        "idPoint": "246"
+      },
+      {
+        "timeStampStart": "1577820601",
+        "quantity": "4.068",
+        "timeStampEnd": "1577820901",
+        "idPoint": "247"
+      },
+      {
+        "timeStampStart": "1577820901",
+        "quantity": "4.248",
+        "timeStampEnd": "1577821201",
+        "idPoint": "248"
+      },
+      {
+        "timeStampStart": "1577821201",
+        "quantity": "3.632",
+        "timeStampEnd": "1577821501",
+        "idPoint": "249"
+      },
+      {
+        "timeStampStart": "1577821501",
+        "quantity": "4.136",
+        "timeStampEnd": "1577821801",
+        "idPoint": "250"
+      },
+      {
+        "timeStampStart": "1577821801",
+        "quantity": "4.188",
+        "timeStampEnd": "1577822101",
+        "idPoint": "251"
+      },
+      {
+        "timeStampStart": "1577822101",
+        "quantity": "4.252",
+        "timeStampEnd": "1577822401",
+        "idPoint": "252"
+      },
+      {
+        "timeStampStart": "1577822401",
+        "quantity": "4.344",
+        "timeStampEnd": "1577822701",
+        "idPoint": "253"
+      },
+      {
+        "timeStampStart": "1577822701",
+        "quantity": "4.332",
+        "timeStampEnd": "1577823001",
+        "idPoint": "254"
+      },
+      {
+        "timeStampStart": "1577823001",
+        "quantity": "4.232",
+        "timeStampEnd": "1577823301",
+        "idPoint": "255"
+      },
+      {
+        "timeStampStart": "1577823301",
+        "quantity": "3.704",
+        "timeStampEnd": "1577823601",
+        "idPoint": "256"
+      },
+      {
+        "timeStampStart": "1577823601",
+        "quantity": "3.812",
+        "timeStampEnd": "1577823901",
+        "idPoint": "257"
+      },
+      {
+        "timeStampStart": "1577823901",
+        "quantity": "3.892",
+        "timeStampEnd": "1577824201",
+        "idPoint": "258"
+      },
+      {
+        "timeStampStart": "1577824201",
+        "quantity": "3.604",
+        "timeStampEnd": "1577824501",
+        "idPoint": "259"
+      },
+      {
+        "timeStampStart": "1577824501",
+        "quantity": "4.272",
+        "timeStampEnd": "1577824801",
+        "idPoint": "260"
+      },
+      {
+        "timeStampStart": "1577824801",
+        "quantity": "3.76",
+        "timeStampEnd": "1577825101",
+        "idPoint": "261"
+      },
+      {
+        "timeStampStart": "1577825101",
+        "quantity": "3.98",
+        "timeStampEnd": "1577825401",
+        "idPoint": "262"
+      },
+      {
+        "timeStampStart": "1577825401",
+        "quantity": "4.256",
+        "timeStampEnd": "1577825701",
+        "idPoint": "263"
+      },
+      {
+        "timeStampStart": "1577825701",
+        "quantity": "3.892",
+        "timeStampEnd": "1577826001",
+        "idPoint": "264"
+      },
+      {
+        "timeStampStart": "1577826001",
+        "quantity": "4.18",
+        "timeStampEnd": "1577826301",
+        "idPoint": "265"
+      },
+      {
+        "timeStampStart": "1577826301",
+        "quantity": "4.068",
+        "timeStampEnd": "1577826601",
+        "idPoint": "266"
+      },
+      {
+        "timeStampStart": "1577826601",
+        "quantity": "4.208",
+        "timeStampEnd": "1577826901",
+        "idPoint": "267"
+      },
+      {
+        "timeStampStart": "1577826901",
+        "quantity": "4.272",
+        "timeStampEnd": "1577827201",
+        "idPoint": "268"
+      },
+      {
+        "timeStampStart": "1577827201",
+        "quantity": "3.944",
+        "timeStampEnd": "1577827501",
+        "idPoint": "269"
+      },
+      {
+        "timeStampStart": "1577827501",
+        "quantity": "3.664",
+        "timeStampEnd": "1577827801",
+        "idPoint": "270"
+      },
+      {
+        "timeStampStart": "1577827801",
+        "quantity": "4.088",
+        "timeStampEnd": "1577828101",
+        "idPoint": "271"
+      },
+      {
+        "timeStampStart": "1577828101",
+        "quantity": "3.684",
+        "timeStampEnd": "1577828401",
+        "idPoint": "272"
+      },
+      {
+        "timeStampStart": "1577828401",
+        "quantity": "4.368",
+        "timeStampEnd": "1577828701",
+        "idPoint": "273"
+      },
+      {
+        "timeStampStart": "1577828701",
+        "quantity": "4.288",
+        "timeStampEnd": "1577829001",
+        "idPoint": "274"
+      },
+      {
+        "timeStampStart": "1577829001",
+        "quantity": "4.04",
+        "timeStampEnd": "1577829301",
+        "idPoint": "275"
+      },
+      {
+        "timeStampStart": "1577829301",
+        "quantity": "3.9",
+        "timeStampEnd": "1577829601",
+        "idPoint": "276"
+      },
+      {
+        "timeStampStart": "1577829601",
+        "quantity": "4.264",
+        "timeStampEnd": "1577829901",
+        "idPoint": "277"
+      },
+      {
+        "timeStampStart": "1577829901",
+        "quantity": "4.268",
+        "timeStampEnd": "1577830201",
+        "idPoint": "278"
+      },
+      {
+        "timeStampStart": "1577830201",
+        "quantity": "3.0716",
+        "timeStampEnd": "1577830501",
+        "idPoint": "279"
+      },
+      {
+        "timeStampStart": "1577830501",
+        "quantity": "0",
+        "timeStampEnd": "1577830801",
+        "idPoint": "280"
+      },
+      {
+        "timeStampStart": "1577830801",
+        "quantity": "0",
+        "timeStampEnd": "1577831101",
+        "idPoint": "281"
+      },
+      {
+        "timeStampStart": "1577831101",
+        "quantity": "0",
+        "timeStampEnd": "1577831401",
+        "idPoint": "282"
+      },
+      {
+        "timeStampStart": "1577831401",
+        "quantity": "0",
+        "timeStampEnd": "1577831701",
+        "idPoint": "283"
+      },
+      {
+        "timeStampStart": "1577831701",
+        "quantity": "0",
+        "timeStampEnd": "1577832001",
+        "idPoint": "284"
+      },
+      {
+        "timeStampStart": "1577832001",
+        "quantity": "0",
+        "timeStampEnd": "1577832301",
+        "idPoint": "285"
+      },
+      {
+        "timeStampStart": "1577832301",
+        "quantity": "0",
+        "timeStampEnd": "1577832601",
+        "idPoint": "286"
+      },
+      {
+        "timeStampStart": "1577832601",
+        "quantity": "0",
+        "timeStampEnd": "1577832901",
+        "idPoint": "287"
+      },
+      {
+        "timeStampStart": "1577832901",
+        "quantity": "0",
+        "timeStampEnd": "1577833201",
+        "idPoint": "288"
+      }
+    ]
+  },
+  {
+    "objectAggregationMeteringPoint": "PRM00000000751304",
+    "timeIntervalStart": "1577746801",
+    "timeIntervalEnd": "1577833201",
+    "resolution": 300,
+    "timeZone": "GMT+1",
+    "pointType": "MW",
+    "timeSeries": [
+      {
+        "timeStampStart": "1577746801",
+        "quantity": "8.8",
+        "timeStampEnd": "1577747101",
+        "idPoint": "1"
+      },
+      {
+        "timeStampStart": "1577747101",
+        "quantity": "7.984",
+        "timeStampEnd": "1577747401",
+        "idPoint": "2"
+      },
+      {
+        "timeStampStart": "1577747401",
+        "quantity": "8.104",
+        "timeStampEnd": "1577747701",
+        "idPoint": "3"
+      },
+      {
+        "timeStampStart": "1577747701",
+        "quantity": "8.776",
+        "timeStampEnd": "1577748001",
+        "idPoint": "4"
+      },
+      {
+        "timeStampStart": "1577748001",
+        "quantity": "8.744",
+        "timeStampEnd": "1577748301",
+        "idPoint": "5"
+      },
+      {
+        "timeStampStart": "1577748301",
+        "quantity": "8.008",
+        "timeStampEnd": "1577748601",
+        "idPoint": "6"
+      },
+      {
+        "timeStampStart": "1577748601",
+        "quantity": "8",
+        "timeStampEnd": "1577748901",
+        "idPoint": "7"
+      },
+      {
+        "timeStampStart": "1577748901",
+        "quantity": "8.352",
+        "timeStampEnd": "1577749201",
+        "idPoint": "8"
+      },
+      {
+        "timeStampStart": "1577749201",
+        "quantity": "8.68",
+        "timeStampEnd": "1577749501",
+        "idPoint": "9"
+      },
+      {
+        "timeStampStart": "1577749501",
+        "quantity": "7.328",
+        "timeStampEnd": "1577749801",
+        "idPoint": "10"
+      },
+      {
+        "timeStampStart": "1577749801",
+        "quantity": "7.6",
+        "timeStampEnd": "1577750101",
+        "idPoint": "11"
+      },
+      {
+        "timeStampStart": "1577750101",
+        "quantity": "8.136",
+        "timeStampEnd": "1577750401",
+        "idPoint": "12"
+      },
+      {
+        "timeStampStart": "1577750401",
+        "quantity": "7.72",
+        "timeStampEnd": "1577750701",
+        "idPoint": "13"
+      },
+      {
+        "timeStampStart": "1577750701",
+        "quantity": "7.912",
+        "timeStampEnd": "1577751001",
+        "idPoint": "14"
+      },
+      {
+        "timeStampStart": "1577751001",
+        "quantity": "7.416",
+        "timeStampEnd": "1577751301",
+        "idPoint": "15"
+      },
+      {
+        "timeStampStart": "1577751301",
+        "quantity": "8.736",
+        "timeStampEnd": "1577751601",
+        "idPoint": "16"
+      },
+      {
+        "timeStampStart": "1577751601",
+        "quantity": "7.4",
+        "timeStampEnd": "1577751901",
+        "idPoint": "17"
+      },
+      {
+        "timeStampStart": "1577751901",
+        "quantity": "8.008",
+        "timeStampEnd": "1577752201",
+        "idPoint": "18"
+      },
+      {
+        "timeStampStart": "1577752201",
+        "quantity": "8.408",
+        "timeStampEnd": "1577752501",
+        "idPoint": "19"
+      },
+      {
+        "timeStampStart": "1577752501",
+        "quantity": "7.848",
+        "timeStampEnd": "1577752801",
+        "idPoint": "20"
+      },
+      {
+        "timeStampStart": "1577752801",
+        "quantity": "8.44",
+        "timeStampEnd": "1577753101",
+        "idPoint": "21"
+      },
+      {
+        "timeStampStart": "1577753101",
+        "quantity": "7.824",
+        "timeStampEnd": "1577753401",
+        "idPoint": "22"
+      },
+      {
+        "timeStampStart": "1577753401",
+        "quantity": "8.792",
+        "timeStampEnd": "1577753701",
+        "idPoint": "23"
+      },
+      {
+        "timeStampStart": "1577753701",
+        "quantity": "8.744",
+        "timeStampEnd": "1577754001",
+        "idPoint": "24"
+      },
+      {
+        "timeStampStart": "1577754001",
+        "quantity": "7.24",
+        "timeStampEnd": "1577754301",
+        "idPoint": "25"
+      },
+      {
+        "timeStampStart": "1577754301",
+        "quantity": "7.216",
+        "timeStampEnd": "1577754601",
+        "idPoint": "26"
+      },
+      {
+        "timeStampStart": "1577754601",
+        "quantity": "7.872",
+        "timeStampEnd": "1577754901",
+        "idPoint": "27"
+      },
+      {
+        "timeStampStart": "1577754901",
+        "quantity": "8.408",
+        "timeStampEnd": "1577755201",
+        "idPoint": "28"
+      },
+      {
+        "timeStampStart": "1577755201",
+        "quantity": "8.408",
+        "timeStampEnd": "1577755501",
+        "idPoint": "29"
+      },
+      {
+        "timeStampStart": "1577755501",
+        "quantity": "7.712",
+        "timeStampEnd": "1577755801",
+        "idPoint": "30"
+      },
+      {
+        "timeStampStart": "1577755801",
+        "quantity": "7.544",
+        "timeStampEnd": "1577756101",
+        "idPoint": "31"
+      },
+      {
+        "timeStampStart": "1577756101",
+        "quantity": "7.976",
+        "timeStampEnd": "1577756401",
+        "idPoint": "32"
+      },
+      {
+        "timeStampStart": "1577756401",
+        "quantity": "7.312",
+        "timeStampEnd": "1577756701",
+        "idPoint": "33"
+      },
+      {
+        "timeStampStart": "1577756701",
+        "quantity": "7.616",
+        "timeStampEnd": "1577757001",
+        "idPoint": "34"
+      },
+      {
+        "timeStampStart": "1577757001",
+        "quantity": "7.496",
+        "timeStampEnd": "1577757301",
+        "idPoint": "35"
+      },
+      {
+        "timeStampStart": "1577757301",
+        "quantity": "7.76",
+        "timeStampEnd": "1577757601",
+        "idPoint": "36"
+      },
+      {
+        "timeStampStart": "1577757601",
+        "quantity": "8.136",
+        "timeStampEnd": "1577757901",
+        "idPoint": "37"
+      },
+      {
+        "timeStampStart": "1577757901",
+        "quantity": "7.92",
+        "timeStampEnd": "1577758201",
+        "idPoint": "38"
+      },
+      {
+        "timeStampStart": "1577758201",
+        "quantity": "7.536",
+        "timeStampEnd": "1577758501",
+        "idPoint": "39"
+      },
+      {
+        "timeStampStart": "1577758501",
+        "quantity": "7.944",
+        "timeStampEnd": "1577758801",
+        "idPoint": "40"
+      },
+      {
+        "timeStampStart": "1577758801",
+        "quantity": "8.264",
+        "timeStampEnd": "1577759101",
+        "idPoint": "41"
+      },
+      {
+        "timeStampStart": "1577759101",
+        "quantity": "7.76",
+        "timeStampEnd": "1577759401",
+        "idPoint": "42"
+      },
+      {
+        "timeStampStart": "1577759401",
+        "quantity": "7.76",
+        "timeStampEnd": "1577759701",
+        "idPoint": "43"
+      },
+      {
+        "timeStampStart": "1577759701",
+        "quantity": "8.296",
+        "timeStampEnd": "1577760001",
+        "idPoint": "44"
+      },
+      {
+        "timeStampStart": "1577760001",
+        "quantity": "8.152",
+        "timeStampEnd": "1577760301",
+        "idPoint": "45"
+      },
+      {
+        "timeStampStart": "1577760301",
+        "quantity": "8.264",
+        "timeStampEnd": "1577760601",
+        "idPoint": "46"
+      },
+      {
+        "timeStampStart": "1577760601",
+        "quantity": "8.392",
+        "timeStampEnd": "1577760901",
+        "idPoint": "47"
+      },
+      {
+        "timeStampStart": "1577760901",
+        "quantity": "8.112",
+        "timeStampEnd": "1577761201",
+        "idPoint": "48"
+      },
+      {
+        "timeStampStart": "1577761201",
+        "quantity": "7.2",
+        "timeStampEnd": "1577761501",
+        "idPoint": "49"
+      },
+      {
+        "timeStampStart": "1577761501",
+        "quantity": "8.624",
+        "timeStampEnd": "1577761801",
+        "idPoint": "50"
+      },
+      {
+        "timeStampStart": "1577761801",
+        "quantity": "8.176",
+        "timeStampEnd": "1577762101",
+        "idPoint": "51"
+      },
+      {
+        "timeStampStart": "1577762101",
+        "quantity": "7.504",
+        "timeStampEnd": "1577762401",
+        "idPoint": "52"
+      },
+      {
+        "timeStampStart": "1577762401",
+        "quantity": "8.2",
+        "timeStampEnd": "1577762701",
+        "idPoint": "53"
+      },
+      {
+        "timeStampStart": "1577762701",
+        "quantity": "7.976",
+        "timeStampEnd": "1577763001",
+        "idPoint": "54"
+      },
+      {
+        "timeStampStart": "1577763001",
+        "quantity": "7.224",
+        "timeStampEnd": "1577763301",
+        "idPoint": "55"
+      },
+      {
+        "timeStampStart": "1577763301",
+        "quantity": "8.072",
+        "timeStampEnd": "1577763601",
+        "idPoint": "56"
+      },
+      {
+        "timeStampStart": "1577763601",
+        "quantity": "8.408",
+        "timeStampEnd": "1577763901",
+        "idPoint": "57"
+      },
+      {
+        "timeStampStart": "1577763901",
+        "quantity": "8.36",
+        "timeStampEnd": "1577764201",
+        "idPoint": "58"
+      },
+      {
+        "timeStampStart": "1577764201",
+        "quantity": "7.36",
+        "timeStampEnd": "1577764501",
+        "idPoint": "59"
+      },
+      {
+        "timeStampStart": "1577764501",
+        "quantity": "7.672",
+        "timeStampEnd": "1577764801",
+        "idPoint": "60"
+      },
+      {
+        "timeStampStart": "1577764801",
+        "quantity": "8.256",
+        "timeStampEnd": "1577765101",
+        "idPoint": "61"
+      },
+      {
+        "timeStampStart": "1577765101",
+        "quantity": "8.664",
+        "timeStampEnd": "1577765401",
+        "idPoint": "62"
+      },
+      {
+        "timeStampStart": "1577765401",
+        "quantity": "7.624",
+        "timeStampEnd": "1577765701",
+        "idPoint": "63"
+      },
+      {
+        "timeStampStart": "1577765701",
+        "quantity": "7.776",
+        "timeStampEnd": "1577766001",
+        "idPoint": "64"
+      },
+      {
+        "timeStampStart": "1577766001",
+        "quantity": "8.616",
+        "timeStampEnd": "1577766301",
+        "idPoint": "65"
+      },
+      {
+        "timeStampStart": "1577766301",
+        "quantity": "7.592",
+        "timeStampEnd": "1577766601",
+        "idPoint": "66"
+      },
+      {
+        "timeStampStart": "1577766601",
+        "quantity": "7.44",
+        "timeStampEnd": "1577766901",
+        "idPoint": "67"
+      },
+      {
+        "timeStampStart": "1577766901",
+        "quantity": "7.64",
+        "timeStampEnd": "1577767201",
+        "idPoint": "68"
+      },
+      {
+        "timeStampStart": "1577767201",
+        "quantity": "7.272",
+        "timeStampEnd": "1577767501",
+        "idPoint": "69"
+      },
+      {
+        "timeStampStart": "1577767501",
+        "quantity": "7.48",
+        "timeStampEnd": "1577767801",
+        "idPoint": "70"
+      },
+      {
+        "timeStampStart": "1577767801",
+        "quantity": "8.288",
+        "timeStampEnd": "1577768101",
+        "idPoint": "71"
+      },
+      {
+        "timeStampStart": "1577768101",
+        "quantity": "7.352",
+        "timeStampEnd": "1577768401",
+        "idPoint": "72"
+      },
+      {
+        "timeStampStart": "1577768401",
+        "quantity": "7.904",
+        "timeStampEnd": "1577768701",
+        "idPoint": "73"
+      },
+      {
+        "timeStampStart": "1577768701",
+        "quantity": "8.688",
+        "timeStampEnd": "1577769001",
+        "idPoint": "74"
+      },
+      {
+        "timeStampStart": "1577769001",
+        "quantity": "8.528",
+        "timeStampEnd": "1577769301",
+        "idPoint": "75"
+      },
+      {
+        "timeStampStart": "1577769301",
+        "quantity": "7.8",
+        "timeStampEnd": "1577769601",
+        "idPoint": "76"
+      },
+      {
+        "timeStampStart": "1577769601",
+        "quantity": "8.112",
+        "timeStampEnd": "1577769901",
+        "idPoint": "77"
+      },
+      {
+        "timeStampStart": "1577769901",
+        "quantity": "8.664",
+        "timeStampEnd": "1577770201",
+        "idPoint": "78"
+      },
+      {
+        "timeStampStart": "1577770201",
+        "quantity": "7.304",
+        "timeStampEnd": "1577770501",
+        "idPoint": "79"
+      },
+      {
+        "timeStampStart": "1577770501",
+        "quantity": "7.6",
+        "timeStampEnd": "1577770801",
+        "idPoint": "80"
+      },
+      {
+        "timeStampStart": "1577770801",
+        "quantity": "7.752",
+        "timeStampEnd": "1577771101",
+        "idPoint": "81"
+      },
+      {
+        "timeStampStart": "1577771101",
+        "quantity": "7.896",
+        "timeStampEnd": "1577771401",
+        "idPoint": "82"
+      },
+      {
+        "timeStampStart": "1577771401",
+        "quantity": "7.952",
+        "timeStampEnd": "1577771701",
+        "idPoint": "83"
+      },
+      {
+        "timeStampStart": "1577771701",
+        "quantity": "7.632",
+        "timeStampEnd": "1577772001",
+        "idPoint": "84"
+      },
+      {
+        "timeStampStart": "1577772001",
+        "quantity": "7.616",
+        "timeStampEnd": "1577772301",
+        "idPoint": "85"
+      },
+      {
+        "timeStampStart": "1577772301",
+        "quantity": "7.68",
+        "timeStampEnd": "1577772601",
+        "idPoint": "86"
+      },
+      {
+        "timeStampStart": "1577772601",
+        "quantity": "7.984",
+        "timeStampEnd": "1577772901",
+        "idPoint": "87"
+      },
+      {
+        "timeStampStart": "1577772901",
+        "quantity": "7.68",
+        "timeStampEnd": "1577773201",
+        "idPoint": "88"
+      },
+      {
+        "timeStampStart": "1577773201",
+        "quantity": "8.28",
+        "timeStampEnd": "1577773501",
+        "idPoint": "89"
+      },
+      {
+        "timeStampStart": "1577773501",
+        "quantity": "7.36",
+        "timeStampEnd": "1577773801",
+        "idPoint": "90"
+      },
+      {
+        "timeStampStart": "1577773801",
+        "quantity": "8.432",
+        "timeStampEnd": "1577774101",
+        "idPoint": "91"
+      },
+      {
+        "timeStampStart": "1577774101",
+        "quantity": "8.744",
+        "timeStampEnd": "1577774401",
+        "idPoint": "92"
+      },
+      {
+        "timeStampStart": "1577774401",
+        "quantity": "7.952",
+        "timeStampEnd": "1577774701",
+        "idPoint": "93"
+      },
+      {
+        "timeStampStart": "1577774701",
+        "quantity": "8.312",
+        "timeStampEnd": "1577775001",
+        "idPoint": "94"
+      },
+      {
+        "timeStampStart": "1577775001",
+        "quantity": "8.496",
+        "timeStampEnd": "1577775301",
+        "idPoint": "95"
+      },
+      {
+        "timeStampStart": "1577775301",
+        "quantity": "8.608",
+        "timeStampEnd": "1577775601",
+        "idPoint": "96"
+      },
+      {
+        "timeStampStart": "1577775601",
+        "quantity": "8.656",
+        "timeStampEnd": "1577775901",
+        "idPoint": "97"
+      },
+      {
+        "timeStampStart": "1577775901",
+        "quantity": "8.216",
+        "timeStampEnd": "1577776201",
+        "idPoint": "98"
+      },
+      {
+        "timeStampStart": "1577776201",
+        "quantity": "8.192",
+        "timeStampEnd": "1577776501",
+        "idPoint": "99"
+      },
+      {
+        "timeStampStart": "1577776501",
+        "quantity": "7.944",
+        "timeStampEnd": "1577776801",
+        "idPoint": "100"
+      },
+      {
+        "timeStampStart": "1577776801",
+        "quantity": "7.272",
+        "timeStampEnd": "1577777101",
+        "idPoint": "101"
+      },
+      {
+        "timeStampStart": "1577777101",
+        "quantity": "8.392",
+        "timeStampEnd": "1577777401",
+        "idPoint": "102"
+      },
+      {
+        "timeStampStart": "1577777401",
+        "quantity": "7.344",
+        "timeStampEnd": "1577777701",
+        "idPoint": "103"
+      },
+      {
+        "timeStampStart": "1577777701",
+        "quantity": "7.64",
+        "timeStampEnd": "1577778001",
+        "idPoint": "104"
+      },
+      {
+        "timeStampStart": "1577778001",
+        "quantity": "8.048",
+        "timeStampEnd": "1577778301",
+        "idPoint": "105"
+      },
+      {
+        "timeStampStart": "1577778301",
+        "quantity": "8.616",
+        "timeStampEnd": "1577778601",
+        "idPoint": "106"
+      },
+      {
+        "timeStampStart": "1577778601",
+        "quantity": "7.776",
+        "timeStampEnd": "1577778901",
+        "idPoint": "107"
+      },
+      {
+        "timeStampStart": "1577778901",
+        "quantity": "7.592",
+        "timeStampEnd": "1577779201",
+        "idPoint": "108"
+      },
+      {
+        "timeStampStart": "1577779201",
+        "quantity": "8.328",
+        "timeStampEnd": "1577779501",
+        "idPoint": "109"
+      },
+      {
+        "timeStampStart": "1577779501",
+        "quantity": "8.016",
+        "timeStampEnd": "1577779801",
+        "idPoint": "110"
+      },
+      {
+        "timeStampStart": "1577779801",
+        "quantity": "7.768",
+        "timeStampEnd": "1577780101",
+        "idPoint": "111"
+      },
+      {
+        "timeStampStart": "1577780101",
+        "quantity": "7.848",
+        "timeStampEnd": "1577780401",
+        "idPoint": "112"
+      },
+      {
+        "timeStampStart": "1577780401",
+        "quantity": "7.456",
+        "timeStampEnd": "1577780701",
+        "idPoint": "113"
+      },
+      {
+        "timeStampStart": "1577780701",
+        "quantity": "7.2",
+        "timeStampEnd": "1577781001",
+        "idPoint": "114"
+      },
+      {
+        "timeStampStart": "1577781001",
+        "quantity": "8.576",
+        "timeStampEnd": "1577781301",
+        "idPoint": "115"
+      },
+      {
+        "timeStampStart": "1577781301",
+        "quantity": "7.296",
+        "timeStampEnd": "1577781601",
+        "idPoint": "116"
+      },
+      {
+        "timeStampStart": "1577781601",
+        "quantity": "8.024",
+        "timeStampEnd": "1577781901",
+        "idPoint": "117"
+      },
+      {
+        "timeStampStart": "1577781901",
+        "quantity": "7.928",
+        "timeStampEnd": "1577782201",
+        "idPoint": "118"
+      },
+      {
+        "timeStampStart": "1577782201",
+        "quantity": "8.6",
+        "timeStampEnd": "1577782501",
+        "idPoint": "119"
+      },
+      {
+        "timeStampStart": "1577782501",
+        "quantity": "7.4",
+        "timeStampEnd": "1577782801",
+        "idPoint": "120"
+      },
+      {
+        "timeStampStart": "1577782801",
+        "quantity": "8.664",
+        "timeStampEnd": "1577783101",
+        "idPoint": "121"
+      },
+      {
+        "timeStampStart": "1577783101",
+        "quantity": "7.496",
+        "timeStampEnd": "1577783401",
+        "idPoint": "122"
+      },
+      {
+        "timeStampStart": "1577783401",
+        "quantity": "7.584",
+        "timeStampEnd": "1577783701",
+        "idPoint": "123"
+      },
+      {
+        "timeStampStart": "1577783701",
+        "quantity": "8.688",
+        "timeStampEnd": "1577784001",
+        "idPoint": "124"
+      },
+      {
+        "timeStampStart": "1577784001",
+        "quantity": "8.616",
+        "timeStampEnd": "1577784301",
+        "idPoint": "125"
+      },
+      {
+        "timeStampStart": "1577784301",
+        "quantity": "7.72",
+        "timeStampEnd": "1577784601",
+        "idPoint": "126"
+      },
+      {
+        "timeStampStart": "1577784601",
+        "quantity": "8.48",
+        "timeStampEnd": "1577784901",
+        "idPoint": "127"
+      },
+      {
+        "timeStampStart": "1577784901",
+        "quantity": "8.6",
+        "timeStampEnd": "1577785201",
+        "idPoint": "128"
+      },
+      {
+        "timeStampStart": "1577785201",
+        "quantity": "7.368",
+        "timeStampEnd": "1577785501",
+        "idPoint": "129"
+      },
+      {
+        "timeStampStart": "1577785501",
+        "quantity": "7.536",
+        "timeStampEnd": "1577785801",
+        "idPoint": "130"
+      },
+      {
+        "timeStampStart": "1577785801",
+        "quantity": "7.728",
+        "timeStampEnd": "1577786101",
+        "idPoint": "131"
+      },
+      {
+        "timeStampStart": "1577786101",
+        "quantity": "8.08",
+        "timeStampEnd": "1577786401",
+        "idPoint": "132"
+      },
+      {
+        "timeStampStart": "1577786401",
+        "quantity": "7.552",
+        "timeStampEnd": "1577786701",
+        "idPoint": "133"
+      },
+      {
+        "timeStampStart": "1577786701",
+        "quantity": "8.152",
+        "timeStampEnd": "1577787001",
+        "idPoint": "134"
+      },
+      {
+        "timeStampStart": "1577787001",
+        "quantity": "8.624",
+        "timeStampEnd": "1577787301",
+        "idPoint": "135"
+      },
+      {
+        "timeStampStart": "1577787301",
+        "quantity": "8.504",
+        "timeStampEnd": "1577787601",
+        "idPoint": "136"
+      },
+      {
+        "timeStampStart": "1577787601",
+        "quantity": "8.224",
+        "timeStampEnd": "1577787901",
+        "idPoint": "137"
+      },
+      {
+        "timeStampStart": "1577787901",
+        "quantity": "7.264",
+        "timeStampEnd": "1577788201",
+        "idPoint": "138"
+      },
+      {
+        "timeStampStart": "1577788201",
+        "quantity": "7.472",
+        "timeStampEnd": "1577788501",
+        "idPoint": "139"
+      },
+      {
+        "timeStampStart": "1577788501",
+        "quantity": "7.776",
+        "timeStampEnd": "1577788801",
+        "idPoint": "140"
+      },
+      {
+        "timeStampStart": "1577788801",
+        "quantity": "7.208",
+        "timeStampEnd": "1577789101",
+        "idPoint": "141"
+      },
+      {
+        "timeStampStart": "1577789101",
+        "quantity": "7.224",
+        "timeStampEnd": "1577789401",
+        "idPoint": "142"
+      },
+      {
+        "timeStampStart": "1577789401",
+        "quantity": "8.28",
+        "timeStampEnd": "1577789701",
+        "idPoint": "143"
+      },
+      {
+        "timeStampStart": "1577789701",
+        "quantity": "8.144",
+        "timeStampEnd": "1577790001",
+        "idPoint": "144"
+      },
+      {
+        "timeStampStart": "1577790001",
+        "quantity": "7.664",
+        "timeStampEnd": "1577790301",
+        "idPoint": "145"
+      },
+      {
+        "timeStampStart": "1577790301",
+        "quantity": "7.232",
+        "timeStampEnd": "1577790601",
+        "idPoint": "146"
+      },
+      {
+        "timeStampStart": "1577790601",
+        "quantity": "8.24",
+        "timeStampEnd": "1577790901",
+        "idPoint": "147"
+      },
+      {
+        "timeStampStart": "1577790901",
+        "quantity": "7.768",
+        "timeStampEnd": "1577791201",
+        "idPoint": "148"
+      },
+      {
+        "timeStampStart": "1577791201",
+        "quantity": "7.648",
+        "timeStampEnd": "1577791501",
+        "idPoint": "149"
+      },
+      {
+        "timeStampStart": "1577791501",
+        "quantity": "7.68",
+        "timeStampEnd": "1577791801",
+        "idPoint": "150"
+      },
+      {
+        "timeStampStart": "1577791801",
+        "quantity": "7.336",
+        "timeStampEnd": "1577792101",
+        "idPoint": "151"
+      },
+      {
+        "timeStampStart": "1577792101",
+        "quantity": "7.672",
+        "timeStampEnd": "1577792401",
+        "idPoint": "152"
+      },
+      {
+        "timeStampStart": "1577792401",
+        "quantity": "8.432",
+        "timeStampEnd": "1577792701",
+        "idPoint": "153"
+      },
+      {
+        "timeStampStart": "1577792701",
+        "quantity": "8.376",
+        "timeStampEnd": "1577793001",
+        "idPoint": "154"
+      },
+      {
+        "timeStampStart": "1577793001",
+        "quantity": "7.2",
+        "timeStampEnd": "1577793301",
+        "idPoint": "155"
+      },
+      {
+        "timeStampStart": "1577793301",
+        "quantity": "8.528",
+        "timeStampEnd": "1577793601",
+        "idPoint": "156"
+      },
+      {
+        "timeStampStart": "1577793601",
+        "quantity": "7.2",
+        "timeStampEnd": "1577793901",
+        "idPoint": "157"
+      },
+      {
+        "timeStampStart": "1577793901",
+        "quantity": "8.656",
+        "timeStampEnd": "1577794201",
+        "idPoint": "158"
+      },
+      {
+        "timeStampStart": "1577794201",
+        "quantity": "8.048",
+        "timeStampEnd": "1577794501",
+        "idPoint": "159"
+      },
+      {
+        "timeStampStart": "1577794501",
+        "quantity": "8.616",
+        "timeStampEnd": "1577794801",
+        "idPoint": "160"
+      },
+      {
+        "timeStampStart": "1577794801",
+        "quantity": "7.488",
+        "timeStampEnd": "1577795101",
+        "idPoint": "161"
+      },
+      {
+        "timeStampStart": "1577795101",
+        "quantity": "7.44",
+        "timeStampEnd": "1577795401",
+        "idPoint": "162"
+      },
+      {
+        "timeStampStart": "1577795401",
+        "quantity": "7.272",
+        "timeStampEnd": "1577795701",
+        "idPoint": "163"
+      },
+      {
+        "timeStampStart": "1577795701",
+        "quantity": "8.8",
+        "timeStampEnd": "1577796001",
+        "idPoint": "164"
+      },
+      {
+        "timeStampStart": "1577796001",
+        "quantity": "8.792",
+        "timeStampEnd": "1577796301",
+        "idPoint": "165"
+      },
+      {
+        "timeStampStart": "1577796301",
+        "quantity": "8.52",
+        "timeStampEnd": "1577796601",
+        "idPoint": "166"
+      },
+      {
+        "timeStampStart": "1577796601",
+        "quantity": "8.12",
+        "timeStampEnd": "1577796901",
+        "idPoint": "167"
+      },
+      {
+        "timeStampStart": "1577796901",
+        "quantity": "8.16",
+        "timeStampEnd": "1577797201",
+        "idPoint": "168"
+      },
+      {
+        "timeStampStart": "1577797201",
+        "quantity": "7.672",
+        "timeStampEnd": "1577797501",
+        "idPoint": "169"
+      },
+      {
+        "timeStampStart": "1577797501",
+        "quantity": "8.528",
+        "timeStampEnd": "1577797801",
+        "idPoint": "170"
+      },
+      {
+        "timeStampStart": "1577797801",
+        "quantity": "8.4",
+        "timeStampEnd": "1577798101",
+        "idPoint": "171"
+      },
+      {
+        "timeStampStart": "1577798101",
+        "quantity": "8.752",
+        "timeStampEnd": "1577798401",
+        "idPoint": "172"
+      },
+      {
+        "timeStampStart": "1577798401",
+        "quantity": "7.984",
+        "timeStampEnd": "1577798701",
+        "idPoint": "173"
+      },
+      {
+        "timeStampStart": "1577798701",
+        "quantity": "8.744",
+        "timeStampEnd": "1577799001",
+        "idPoint": "174"
+      },
+      {
+        "timeStampStart": "1577799001",
+        "quantity": "8.752",
+        "timeStampEnd": "1577799301",
+        "idPoint": "175"
+      },
+      {
+        "timeStampStart": "1577799301",
+        "quantity": "8.648",
+        "timeStampEnd": "1577799601",
+        "idPoint": "176"
+      },
+      {
+        "timeStampStart": "1577799601",
+        "quantity": "8.728",
+        "timeStampEnd": "1577799901",
+        "idPoint": "177"
+      },
+      {
+        "timeStampStart": "1577799901",
+        "quantity": "7.52",
+        "timeStampEnd": "1577800201",
+        "idPoint": "178"
+      },
+      {
+        "timeStampStart": "1577800201",
+        "quantity": "8.192",
+        "timeStampEnd": "1577800501",
+        "idPoint": "179"
+      },
+      {
+        "timeStampStart": "1577800501",
+        "quantity": "8.592",
+        "timeStampEnd": "1577800801",
+        "idPoint": "180"
+      },
+      {
+        "timeStampStart": "1577800801",
+        "quantity": "8.088",
+        "timeStampEnd": "1577801101",
+        "idPoint": "181"
+      },
+      {
+        "timeStampStart": "1577801101",
+        "quantity": "7.536",
+        "timeStampEnd": "1577801401",
+        "idPoint": "182"
+      },
+      {
+        "timeStampStart": "1577801401",
+        "quantity": "8.008",
+        "timeStampEnd": "1577801701",
+        "idPoint": "183"
+      },
+      {
+        "timeStampStart": "1577801701",
+        "quantity": "8.72",
+        "timeStampEnd": "1577802001",
+        "idPoint": "184"
+      },
+      {
+        "timeStampStart": "1577802001",
+        "quantity": "8.496",
+        "timeStampEnd": "1577802301",
+        "idPoint": "185"
+      },
+      {
+        "timeStampStart": "1577802301",
+        "quantity": "8.344",
+        "timeStampEnd": "1577802601",
+        "idPoint": "186"
+      },
+      {
+        "timeStampStart": "1577802601",
+        "quantity": "8.52",
+        "timeStampEnd": "1577802901",
+        "idPoint": "187"
+      },
+      {
+        "timeStampStart": "1577802901",
+        "quantity": "7.496",
+        "timeStampEnd": "1577803201",
+        "idPoint": "188"
+      },
+      {
+        "timeStampStart": "1577803201",
+        "quantity": "8.72",
+        "timeStampEnd": "1577803501",
+        "idPoint": "189"
+      },
+      {
+        "timeStampStart": "1577803501",
+        "quantity": "7.96",
+        "timeStampEnd": "1577803801",
+        "idPoint": "190"
+      },
+      {
+        "timeStampStart": "1577803801",
+        "quantity": "8.536",
+        "timeStampEnd": "1577804101",
+        "idPoint": "191"
+      },
+      {
+        "timeStampStart": "1577804101",
+        "quantity": "8.456",
+        "timeStampEnd": "1577804401",
+        "idPoint": "192"
+      },
+      {
+        "timeStampStart": "1577804401",
+        "quantity": "7.616",
+        "timeStampEnd": "1577804701",
+        "idPoint": "193"
+      },
+      {
+        "timeStampStart": "1577804701",
+        "quantity": "8.448",
+        "timeStampEnd": "1577805001",
+        "idPoint": "194"
+      },
+      {
+        "timeStampStart": "1577805001",
+        "quantity": "8.2",
+        "timeStampEnd": "1577805301",
+        "idPoint": "195"
+      },
+      {
+        "timeStampStart": "1577805301",
+        "quantity": "8.76",
+        "timeStampEnd": "1577805601",
+        "idPoint": "196"
+      },
+      {
+        "timeStampStart": "1577805601",
+        "quantity": "8.272",
+        "timeStampEnd": "1577805901",
+        "idPoint": "197"
+      },
+      {
+        "timeStampStart": "1577805901",
+        "quantity": "8.768",
+        "timeStampEnd": "1577806201",
+        "idPoint": "198"
+      },
+      {
+        "timeStampStart": "1577806201",
+        "quantity": "8.384",
+        "timeStampEnd": "1577806501",
+        "idPoint": "199"
+      },
+      {
+        "timeStampStart": "1577806501",
+        "quantity": "7.712",
+        "timeStampEnd": "1577806801",
+        "idPoint": "200"
+      },
+      {
+        "timeStampStart": "1577806801",
+        "quantity": "8.224",
+        "timeStampEnd": "1577807101",
+        "idPoint": "201"
+      },
+      {
+        "timeStampStart": "1577807101",
+        "quantity": "7.728",
+        "timeStampEnd": "1577807401",
+        "idPoint": "202"
+      },
+      {
+        "timeStampStart": "1577807401",
+        "quantity": "7.52",
+        "timeStampEnd": "1577807701",
+        "idPoint": "203"
+      },
+      {
+        "timeStampStart": "1577807701",
+        "quantity": "8.392",
+        "timeStampEnd": "1577808001",
+        "idPoint": "204"
+      },
+      {
+        "timeStampStart": "1577808001",
+        "quantity": "8.032",
+        "timeStampEnd": "1577808301",
+        "idPoint": "205"
+      },
+      {
+        "timeStampStart": "1577808301",
+        "quantity": "8.544",
+        "timeStampEnd": "1577808601",
+        "idPoint": "206"
+      },
+      {
+        "timeStampStart": "1577808601",
+        "quantity": "7.632",
+        "timeStampEnd": "1577808901",
+        "idPoint": "207"
+      },
+      {
+        "timeStampStart": "1577808901",
+        "quantity": "8.536",
+        "timeStampEnd": "1577809201",
+        "idPoint": "208"
+      },
+      {
+        "timeStampStart": "1577809201",
+        "quantity": "8.04",
+        "timeStampEnd": "1577809501",
+        "idPoint": "209"
+      },
+      {
+        "timeStampStart": "1577809501",
+        "quantity": "7.24",
+        "timeStampEnd": "1577809801",
+        "idPoint": "210"
+      },
+      {
+        "timeStampStart": "1577809801",
+        "quantity": "7.544",
+        "timeStampEnd": "1577810101",
+        "idPoint": "211"
+      },
+      {
+        "timeStampStart": "1577810101",
+        "quantity": "7.472",
+        "timeStampEnd": "1577810401",
+        "idPoint": "212"
+      },
+      {
+        "timeStampStart": "1577810401",
+        "quantity": "8.768",
+        "timeStampEnd": "1577810701",
+        "idPoint": "213"
+      },
+      {
+        "timeStampStart": "1577810701",
+        "quantity": "8.504",
+        "timeStampEnd": "1577811001",
+        "idPoint": "214"
+      },
+      {
+        "timeStampStart": "1577811001",
+        "quantity": "7.504",
+        "timeStampEnd": "1577811301",
+        "idPoint": "215"
+      },
+      {
+        "timeStampStart": "1577811301",
+        "quantity": "8.576",
+        "timeStampEnd": "1577811601",
+        "idPoint": "216"
+      },
+      {
+        "timeStampStart": "1577811601",
+        "quantity": "8.68",
+        "timeStampEnd": "1577811901",
+        "idPoint": "217"
+      },
+      {
+        "timeStampStart": "1577811901",
+        "quantity": "7.232",
+        "timeStampEnd": "1577812201",
+        "idPoint": "218"
+      },
+      {
+        "timeStampStart": "1577812201",
+        "quantity": "7.6",
+        "timeStampEnd": "1577812501",
+        "idPoint": "219"
+      },
+      {
+        "timeStampStart": "1577812501",
+        "quantity": "8.296",
+        "timeStampEnd": "1577812801",
+        "idPoint": "220"
+      },
+      {
+        "timeStampStart": "1577812801",
+        "quantity": "8.088",
+        "timeStampEnd": "1577813101",
+        "idPoint": "221"
+      },
+      {
+        "timeStampStart": "1577813101",
+        "quantity": "8.408",
+        "timeStampEnd": "1577813401",
+        "idPoint": "222"
+      },
+      {
+        "timeStampStart": "1577813401",
+        "quantity": "7.936",
+        "timeStampEnd": "1577813701",
+        "idPoint": "223"
+      },
+      {
+        "timeStampStart": "1577813701",
+        "quantity": "8.76",
+        "timeStampEnd": "1577814001",
+        "idPoint": "224"
+      },
+      {
+        "timeStampStart": "1577814001",
+        "quantity": "8.536",
+        "timeStampEnd": "1577814301",
+        "idPoint": "225"
+      },
+      {
+        "timeStampStart": "1577814301",
+        "quantity": "7.896",
+        "timeStampEnd": "1577814601",
+        "idPoint": "226"
+      },
+      {
+        "timeStampStart": "1577814601",
+        "quantity": "7.568",
+        "timeStampEnd": "1577814901",
+        "idPoint": "227"
+      },
+      {
+        "timeStampStart": "1577814901",
+        "quantity": "8.352",
+        "timeStampEnd": "1577815201",
+        "idPoint": "228"
+      },
+      {
+        "timeStampStart": "1577815201",
+        "quantity": "7.304",
+        "timeStampEnd": "1577815501",
+        "idPoint": "229"
+      },
+      {
+        "timeStampStart": "1577815501",
+        "quantity": "7.88",
+        "timeStampEnd": "1577815801",
+        "idPoint": "230"
+      },
+      {
+        "timeStampStart": "1577815801",
+        "quantity": "8.36",
+        "timeStampEnd": "1577816101",
+        "idPoint": "231"
+      },
+      {
+        "timeStampStart": "1577816101",
+        "quantity": "7.672",
+        "timeStampEnd": "1577816401",
+        "idPoint": "232"
+      },
+      {
+        "timeStampStart": "1577816401",
+        "quantity": "7.56",
+        "timeStampEnd": "1577816701",
+        "idPoint": "233"
+      },
+      {
+        "timeStampStart": "1577816701",
+        "quantity": "8.6",
+        "timeStampEnd": "1577817001",
+        "idPoint": "234"
+      },
+      {
+        "timeStampStart": "1577817001",
+        "quantity": "7.792",
+        "timeStampEnd": "1577817301",
+        "idPoint": "235"
+      },
+      {
+        "timeStampStart": "1577817301",
+        "quantity": "8.504",
+        "timeStampEnd": "1577817601",
+        "idPoint": "236"
+      },
+      {
+        "timeStampStart": "1577817601",
+        "quantity": "7.928",
+        "timeStampEnd": "1577817901",
+        "idPoint": "237"
+      },
+      {
+        "timeStampStart": "1577817901",
+        "quantity": "7.416",
+        "timeStampEnd": "1577818201",
+        "idPoint": "238"
+      },
+      {
+        "timeStampStart": "1577818201",
+        "quantity": "8.568",
+        "timeStampEnd": "1577818501",
+        "idPoint": "239"
+      },
+      {
+        "timeStampStart": "1577818501",
+        "quantity": "8.632",
+        "timeStampEnd": "1577818801",
+        "idPoint": "240"
+      },
+      {
+        "timeStampStart": "1577818801",
+        "quantity": "8.368",
+        "timeStampEnd": "1577819101",
+        "idPoint": "241"
+      },
+      {
+        "timeStampStart": "1577819101",
+        "quantity": "7.672",
+        "timeStampEnd": "1577819401",
+        "idPoint": "242"
+      },
+      {
+        "timeStampStart": "1577819401",
+        "quantity": "7.504",
+        "timeStampEnd": "1577819701",
+        "idPoint": "243"
+      },
+      {
+        "timeStampStart": "1577819701",
+        "quantity": "7.296",
+        "timeStampEnd": "1577820001",
+        "idPoint": "244"
+      },
+      {
+        "timeStampStart": "1577820001",
+        "quantity": "8.376",
+        "timeStampEnd": "1577820301",
+        "idPoint": "245"
+      },
+      {
+        "timeStampStart": "1577820301",
+        "quantity": "7.272",
+        "timeStampEnd": "1577820601",
+        "idPoint": "246"
+      },
+      {
+        "timeStampStart": "1577820601",
+        "quantity": "7.864",
+        "timeStampEnd": "1577820901",
+        "idPoint": "247"
+      },
+      {
+        "timeStampStart": "1577820901",
+        "quantity": "8.448",
+        "timeStampEnd": "1577821201",
+        "idPoint": "248"
+      },
+      {
+        "timeStampStart": "1577821201",
+        "quantity": "8.544",
+        "timeStampEnd": "1577821501",
+        "idPoint": "249"
+      },
+      {
+        "timeStampStart": "1577821501",
+        "quantity": "7.216",
+        "timeStampEnd": "1577821801",
+        "idPoint": "250"
+      },
+      {
+        "timeStampStart": "1577821801",
+        "quantity": "8.064",
+        "timeStampEnd": "1577822101",
+        "idPoint": "251"
+      },
+      {
+        "timeStampStart": "1577822101",
+        "quantity": "7.704",
+        "timeStampEnd": "1577822401",
+        "idPoint": "252"
+      },
+      {
+        "timeStampStart": "1577822401",
+        "quantity": "8.208",
+        "timeStampEnd": "1577822701",
+        "idPoint": "253"
+      },
+      {
+        "timeStampStart": "1577822701",
+        "quantity": "8.04",
+        "timeStampEnd": "1577823001",
+        "idPoint": "254"
+      },
+      {
+        "timeStampStart": "1577823001",
+        "quantity": "7.52",
+        "timeStampEnd": "1577823301",
+        "idPoint": "255"
+      },
+      {
+        "timeStampStart": "1577823301",
+        "quantity": "7.496",
+        "timeStampEnd": "1577823601",
+        "idPoint": "256"
+      },
+      {
+        "timeStampStart": "1577823601",
+        "quantity": "7.2",
+        "timeStampEnd": "1577823901",
+        "idPoint": "257"
+      },
+      {
+        "timeStampStart": "1577823901",
+        "quantity": "8.304",
+        "timeStampEnd": "1577824201",
+        "idPoint": "258"
+      },
+      {
+        "timeStampStart": "1577824201",
+        "quantity": "7.936",
+        "timeStampEnd": "1577824501",
+        "idPoint": "259"
+      },
+      {
+        "timeStampStart": "1577824501",
+        "quantity": "7.52",
+        "timeStampEnd": "1577824801",
+        "idPoint": "260"
+      },
+      {
+        "timeStampStart": "1577824801",
+        "quantity": "7.864",
+        "timeStampEnd": "1577825101",
+        "idPoint": "261"
+      },
+      {
+        "timeStampStart": "1577825101",
+        "quantity": "7.264",
+        "timeStampEnd": "1577825401",
+        "idPoint": "262"
+      },
+      {
+        "timeStampStart": "1577825401",
+        "quantity": "7.992",
+        "timeStampEnd": "1577825701",
+        "idPoint": "263"
+      },
+      {
+        "timeStampStart": "1577825701",
+        "quantity": "8.64",
+        "timeStampEnd": "1577826001",
+        "idPoint": "264"
+      },
+      {
+        "timeStampStart": "1577826001",
+        "quantity": "8.096",
+        "timeStampEnd": "1577826301",
+        "idPoint": "265"
+      },
+      {
+        "timeStampStart": "1577826301",
+        "quantity": "7.672",
+        "timeStampEnd": "1577826601",
+        "idPoint": "266"
+      },
+      {
+        "timeStampStart": "1577826601",
+        "quantity": "7.472",
+        "timeStampEnd": "1577826901",
+        "idPoint": "267"
+      },
+      {
+        "timeStampStart": "1577826901",
+        "quantity": "8.136",
+        "timeStampEnd": "1577827201",
+        "idPoint": "268"
+      },
+      {
+        "timeStampStart": "1577827201",
+        "quantity": "7.304",
+        "timeStampEnd": "1577827501",
+        "idPoint": "269"
+      },
+      {
+        "timeStampStart": "1577827501",
+        "quantity": "7.72",
+        "timeStampEnd": "1577827801",
+        "idPoint": "270"
+      },
+      {
+        "timeStampStart": "1577827801",
+        "quantity": "8.256",
+        "timeStampEnd": "1577828101",
+        "idPoint": "271"
+      },
+      {
+        "timeStampStart": "1577828101",
+        "quantity": "8.288",
+        "timeStampEnd": "1577828401",
+        "idPoint": "272"
+      },
+      {
+        "timeStampStart": "1577828401",
+        "quantity": "7.304",
+        "timeStampEnd": "1577828701",
+        "idPoint": "273"
+      },
+      {
+        "timeStampStart": "1577828701",
+        "quantity": "7.448",
+        "timeStampEnd": "1577829001",
+        "idPoint": "274"
+      },
+      {
+        "timeStampStart": "1577829001",
+        "quantity": "8.384",
+        "timeStampEnd": "1577829301",
+        "idPoint": "275"
+      },
+      {
+        "timeStampStart": "1577829301",
+        "quantity": "8.408",
+        "timeStampEnd": "1577829601",
+        "idPoint": "276"
+      },
+      {
+        "timeStampStart": "1577829601",
+        "quantity": "7.456",
+        "timeStampEnd": "1577829901",
+        "idPoint": "277"
+      },
+      {
+        "timeStampStart": "1577829901",
+        "quantity": "7.688",
+        "timeStampEnd": "1577830201",
+        "idPoint": "278"
+      },
+      {
+        "timeStampStart": "1577830201",
+        "quantity": "4.168",
+        "timeStampEnd": "1577830501",
+        "idPoint": "279"
+      },
+      {
+        "timeStampStart": "1577830501",
+        "quantity": "0",
+        "timeStampEnd": "1577830801",
+        "idPoint": "280"
+      },
+      {
+        "timeStampStart": "1577830801",
+        "quantity": "0",
+        "timeStampEnd": "1577831101",
+        "idPoint": "281"
+      },
+      {
+        "timeStampStart": "1577831101",
+        "quantity": "0",
+        "timeStampEnd": "1577831401",
+        "idPoint": "282"
+      },
+      {
+        "timeStampStart": "1577831401",
+        "quantity": "0",
+        "timeStampEnd": "1577831701",
+        "idPoint": "283"
+      },
+      {
+        "timeStampStart": "1577831701",
+        "quantity": "0",
+        "timeStampEnd": "1577832001",
+        "idPoint": "284"
+      },
+      {
+        "timeStampStart": "1577832001",
+        "quantity": "0",
+        "timeStampEnd": "1577832301",
+        "idPoint": "285"
+      },
+      {
+        "timeStampStart": "1577832301",
+        "quantity": "0",
+        "timeStampEnd": "1577832601",
+        "idPoint": "286"
+      },
+      {
+        "timeStampStart": "1577832601",
+        "quantity": "0",
+        "timeStampEnd": "1577832901",
+        "idPoint": "287"
+      },
+      {
+        "timeStampStart": "1577832901",
+        "quantity": "0",
+        "timeStampEnd": "1577833201",
+        "idPoint": "288"
+      }
+    ]
+  }
+]

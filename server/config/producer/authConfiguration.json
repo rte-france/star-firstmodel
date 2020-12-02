@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "userEmail": "user.star@eolien-alize.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "EolienAlize",
+      "organizationType": "producer",
+      "role": "user"
+    },
+    {
+      "userEmail": "user.star@eolien-mistral.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "EolienMistral",
+      "organizationType": "producer",
+      "role": "user"
+    },
+    {
+      "userEmail": "user.star@eolien-zephyr.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "EolienZephyr",
+      "organizationType": "producer",
+      "role": "user"
+    }
+  ]
+}

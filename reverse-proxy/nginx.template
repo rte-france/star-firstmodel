@@ -1,0 +1,33 @@
+worker_processes 5;
+
+events {
+  worker_connections 1024;
+  multi_accept on;
+}
+
+http {
+  include             /etc/nginx/mime.types;
+  default_type        application/octet-stream;
+  sendfile            off;
+  keepalive_timeout   65;
+  include /etc/nginx/conf.d/*.conf;
+  server {
+    listen                  5000;
+    client_max_body_size    32m;
+    resolver                127.0.0.11;
+
+    set $client "http://${CLIENT_NAME}:4200";
+    location / {
+      proxy_pass $client;
+    }
+
+    set $api "http://${SERVER_NAME}:${SERVER_PORT}";
+    location /api/ {
+      proxy_pass $api;
+
+      proxy_set_header X-Forwarded-Host $host;
+      proxy_set_header X-Forwarded-Port $server_port;
+      proxy_set_header X-Forwarded-Proto $scheme;
+    }
+  }
+}

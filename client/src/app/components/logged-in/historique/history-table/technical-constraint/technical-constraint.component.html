@@ -1,0 +1,75 @@
+<div
+  class="col-md-0 detail-text"
+  placement="left"
+  triggers="manual"
+  #tooltip="ngbTooltip"
+  (mouseover)="
+    isTooltipOpen(selectedActivation.logOrder)
+      ? tooltip.open()
+      : tooltip.close()
+  "
+  [ngbTooltip]="technicalConstraintTooltip"
+  [ngClass]="
+    technicalConstraintIsSubmittedSuccessfully ||
+    isTechnicalConstraintReported(selectedActivation.logOrder)
+      ? 'technical-constraint'
+      : 'no-technical-constraint'
+  "
+>
+  <ng-template #technicalConstraintTooltip>
+    <div
+      *ngIf="isTechnicalConstraintReported(selectedActivation.logOrder)"
+      class="tooltip-window"
+      (mouseleave)="tooltip.close()"
+    >
+      <div class="tooltip-message-primary">
+        {{ setToolTipMessage(selectedActivation.logOrder) }}
+      </div>
+      <div class="tooltip-message">
+        signalée à
+        <span class="tooltip-message-secondary">{{
+          setToolTipTime(selectedActivation.logOrder)
+        }}</span>
+      </div>
+      <div class="tooltip-message">
+        par
+        <span class="tooltip-message-secondary">
+          {{ displayCreatorOfConstraint() }}
+        </span>
+      </div>
+      <div class="close-fix">
+        close
+      </div>
+    </div>
+    <div
+      *ngIf="
+        !isTechnicalConstraintReported(selectedActivation.logOrder) &&
+        isUserAllowedToReportTechnicalConstraint()
+      "
+      class="tooltip-window"
+      (mouseleave)="tooltip.close()"
+    >
+      <div class="tooltip-technical-constraint-title">
+        Signaler une contrainte technique
+      </div>
+      <input
+        #technicalConstraint
+        class="form-control tooltip-technical-constraint-input"
+        type="text"
+        placeholder="Nature de la contrainte ..."
+      />
+      <div
+        class="btn btn-primary tooltip-technical-constraint-submit-button"
+        (click)="
+          submitTechnicalConstraint(
+            technicalConstraint.value,
+            selectedActivation.siteOrderId
+          );
+          tooltip.close()
+        "
+      >
+        Soumettre
+      </div>
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,66 @@
+<div class="block">
+  <div class="row">
+    <div class="col-md-12">
+      <img
+        (click)="redirect()"
+        class="icon"
+        src="../../../../assets/img/arrow-left.svg"
+      />
+      <div class="search-title">
+        Soumettre une nouveau fichier de courbe de charge
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-12">
+      <div class="new-charge">
+        Nouveau fichier de courbe de charge
+      </div>
+      <div class="center">
+        <ngx-file-drop
+          dropZoneClassName="drop-file"
+          (onFileDrop)="dropped($event)"
+          (onFileOver)="fileOver($event)"
+          (onFileLeave)="fileLeave($event)"
+          contentClassName="content"
+        >
+          <ng-template
+            ngx-file-drop-content-tmp
+            let-openFileSelector="openFileSelector"
+          >
+            <img class="files" src="../../../../assets/img/icon-files.svg" />
+            <div class="upload-text">Glisser-déposer un fichier...</div>
+            <p class="or">ou</p>
+            <button
+              type="button"
+              class="btn import"
+              (click)="openFileSelector()"
+            >
+              Importer une courbe de charge
+            </button>
+          </ng-template>
+        </ngx-file-drop>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="upload-table">
+      <table class="table">
+        <tbody class="upload-name-style">
+          <tr>
+            <td *ngIf="displaySuccess" class="success">
+              <strong>Succès Upload {{ files[0].relativePath }}</strong>
+            </td>
+            <td *ngIf="displayError" class="error">
+              <strong>Echec Upload: {{ message }}</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <button class="btn send-btn" (click)="submitFile()">Soumettre</button>
+  </div>
+</div>

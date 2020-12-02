@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "userEmail": "user.star@bsp1.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "BSP1",
+      "organizationType": "bsp",
+      "role": "user"
+    },
+    {
+      "userEmail": "user.star@bsp2.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "BSP2",
+      "organizationType": "bsp",
+      "role": "user"
+    },
+    {
+      "userEmail": "user.star@bsp3.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "BSP3",
+      "organizationType": "bsp",
+      "role": "user"
+    }
+  ]
+}

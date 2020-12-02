@@ -1,0 +1,74 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: star.com
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: TSO
+    Domain: tso.star.com
+    EnableNodeOUs: true
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+
+  - Name: DSO
+    Domain: dso.star.com
+    EnableNodeOUs: true
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+
+  - Name: THIRD
+    Domain: third.star.com
+    EnableNodeOUs: true
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Template:
+      Count: 1
+    Users:
+      Count: 0
+
+  - Name: BSP
+    Domain: bsp.star.com
+    EnableNodeOUs: true
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Template:
+      Count: 0
+    Users:
+      Count: 0
+
+  - Name: PRODUCER
+    Domain: producer.star.com
+    EnableNodeOUs: true
+    CA:
+      Country: FR
+      Province: IDF
+      Locality: Paris
+    Template:
+      Count: 0
+    Users:
+      Count: 0
+

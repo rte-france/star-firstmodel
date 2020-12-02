@@ -1,0 +1,49 @@
+<div class="rte-logo-bar">
+  <img class="rte-logo" src="../../../assets/img/rte-logo.png" />
+</div>
+<app-login-header></app-login-header>
+<div class="container">
+  <div class="row">
+    <div class="login-form">
+      <div class="form-group">
+        <input
+          type="email"
+          id="userEmail"
+          placeholder="Adresse mail"
+          class="form-control"
+          autofocus
+          autocomplete="off"
+          [(ngModel)]="userEmail"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          id="password"
+          placeholder="Mot de passe"
+          class="form-control"
+          autocomplete="off"
+          [(ngModel)]="userPassword"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <button
+          type="button"
+          id="login_button"
+          (click)="login(userEmail, userPassword)"
+          class="btn btn-login form-control"
+        >
+          Connexion
+        </button>
+        <span *ngIf="showErrorMessage" class="text-danger"
+          >Invalid username or password</span
+        >
+      </div>
+      <a href="#">
+        <span>Mot de passe oublié ?</span>
+      </a>
+    </div>
+  </div>
+</div>

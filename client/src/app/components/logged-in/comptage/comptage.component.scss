@@ -1,0 +1,125 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/styles';
+
+.block {
+  margin: 50px;
+  padding: 25px;
+  height: 90%;
+  -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);
+
+  .icon {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .search-title {
+    font-family: $font-family-primary;
+    font-weight: 600;
+    font-size: 48px;
+    margin-left: 20px;
+    color: $color-primary;
+    display: inline-block;
+  }
+
+  hr {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  .upload-text {
+    text-align: center;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+    color: $font-color-primary;
+    margin-top: 15px;
+  }
+
+  .files {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .or {
+    font-size: $font-size-primary;
+    text-align: center;
+    font-family: $font-family-primary;
+    margin-top: 60px;
+  }
+
+  .new-charge {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 70px;
+    font-family: $font-family-primary;
+    margin-bottom: 40px;
+  }
+
+  .charge-block {
+    background-color: #f9f9f9;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .import-btn {
+    text-align: center;
+  }
+
+  .import {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: $font-size-primary;
+    font-family: $font-family-primary;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .send-btn {
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    border-radius: 0;
+    background-color: $color-primary;
+    outline: none;
+    color: white;
+    text-decoration: none;
+    font-family: $font-family-primary;
+    font-size: 24px;
+    margin-top: 50px;
+    border: 0;
+  }
+
+  .nav-back {
+    text-decoration: none;
+    outline: none;
+  }
+
+  .table td,
+  .table th {
+    border-top: 0;
+  }
+
+  .upload-table {
+    margin: auto;
+    margin-top: 120px;
+  }
+
+  .success {
+    color: green;
+  }
+
+  .error {
+    color: red;
+  }
+}

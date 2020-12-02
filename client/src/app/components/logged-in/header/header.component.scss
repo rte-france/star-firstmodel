@@ -1,0 +1,78 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/styles';
+
+.rte-logo-bar {
+  margin: auto;
+  width: 41px;
+}
+
+.rte-logo {
+  width: 41px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav-border {
+  border-bottom: 1px solid #bcbcbc;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: $color-primary;
+}
+
+.active {
+  border-bottom: 2px solid $color-primary;
+}
+
+.link-item {
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item {
+  padding-top: 15px;
+  margin-left: 20px;
+  font-size: $font-size-primary;
+  font-family: $font-family-primary;
+
+  .tab {
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+}
+
+.navbar-nav > .active > .nav-link {
+  color: $color-primary;
+}
+
+.logout {
+  text-align: right;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+  display: inline-block;
+}
+
+.spacing {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #afafaf;
+  letter-spacing: 2px;
+  font-family: $font-family-primary;
+  display: inline-block;
+}
+
+.logout-items {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "userEmail": "user.star@dso1.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "DSO1",
+      "organizationType": "dso",
+      "role": "admin"
+    },
+    {
+      "userEmail": "user.star@dso2.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "DSO2",
+      "organizationType": "dso",
+      "role": "admin"
+    },
+    {
+      "userEmail": "user.star@dso3.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "DSO3",
+      "organizationType": "dso",
+      "role": "admin"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+---
+Organizations:
+    - &Consortium
+        Name: Consortium
+        ID: Consortium
+        MSPDir: crypto-config/ordererOrganizations/star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('Consortium.member')"
+            Writers:
+                Type: Signature
+                Rule: "OR('Consortium.member')"
+            Admins:
+                Type: Signature
+                Rule: "OR('Consortium.admin')"
+
+    - &TSO
+        Name: TSOMSP
+        ID: TSOMSP
+        MSPDir: crypto-config/peerOrganizations/tso.star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('TSOMSP.admin', 'TSOMSP.peer', 'TSOMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('TSOMSP.admin', 'TSOMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('TSOMSP.admin')"
+
+        AnchorPeers:
+        - Host: peer0.tso.star.com
+          Port: 7051
+
+    - &DSO
+        Name: DSOMSP
+        ID: DSOMSP
+        MSPDir: crypto-config/peerOrganizations/dso.star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('DSOMSP.admin', 'DSOMSP.peer', 'DSOMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('DSOMSP.admin', 'DSOMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('DSOMSP.admin')"
+
+        AnchorPeers:
+        - Host: peer0.dso.star.com
+          Port: 7051
+
+    - &THIRD
+        Name: THIRDMSP
+        ID: THIRDMSP
+        MSPDir: crypto-config/peerOrganizations/third.star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('THIRDMSP.admin', 'THIRDMSP.peer', 'THIRDMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('THIRDMSP.admin', 'THIRDMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('THIRDMSP.admin')"
+
+        AnchorPeers:
+            - Host: peer0.third.star.com
+              Port: 7051
+
+    - &BSP
+        Name: BSPMSP
+        ID: BSPMSP
+        MSPDir: crypto-config/peerOrganizations/bsp.star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('BSPMSP.admin', 'BSPMSP.peer', 'BSPMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('BSPMSP.admin', 'BSPMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('BSPMSP.admin')"
+        AnchorPeers:
+        - Host: peer0.third.star.com
+          Port: 7051
+
+    - &PRODUCER
+        Name: PRODUCERMSP
+        ID: PRODUCERMSP
+        MSPDir: crypto-config/peerOrganizations/producer.star.com/msp
+        Policies:
+            Readers:
+                Type: Signature
+                Rule: "OR('PRODUCERMSP.admin', 'PRODUCERMSP.peer', 'PRODUCERMSP.client')"
+            Writers:
+                Type: Signature
+                Rule: "OR('PRODUCERMSP.admin', 'PRODUCERMSP.client')"
+            Admins:
+                Type: Signature
+                Rule: "OR('PRODUCERMSP.admin')"
+        AnchorPeers:
+            - Host: peer0.third.star.com
+              Port: 7051
+
+Capabilities:
+    Global: &ChannelCapabilities
+        V1_1: true
+    Orderer: &OrdererCapabilities
+        V1_1: true
+    Application: &ApplicationCapabilities
+        V1_3: false
+        V1_2: true
+        V1_1: false
+
+
+Application: &ApplicationDefaults
+    Organizations:
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+    Capabilities:
+        <<: *ApplicationCapabilities
+
+Orderer: &OrdererDefaults
+    OrdererType: solo
+
+    Addresses:
+    - orderer.star.com:7050
+
+    BatchTimeout: 2s
+
+    BatchSize:
+
+        MaxMessageCount: 10
+
+        AbsoluteMaxBytes: 99 MB
+
+        PreferredMaxBytes: 512 KB
+
+    Organizations:
+
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+        BlockValidation:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+
+    Capabilities:
+        <<: *OrdererCapabilities
+
+Channel: &ChannelDefaults
+    Policies:
+        Readers:
+            Type: ImplicitMeta
+            Rule: "ANY Readers"
+        Writers:
+            Type: ImplicitMeta
+            Rule: "ANY Writers"
+        Admins:
+            Type: ImplicitMeta
+            Rule: "MAJORITY Admins"
+    Capabilities:
+        <<: *ChannelCapabilities
+
+Profiles:
+    StarOrdererGenesis:
+        <<: *ChannelDefaults
+        Orderer:
+            <<: *OrdererDefaults
+            Organizations:
+                - *Consortium
+        Consortiums:
+            StarNetworkConsortium:
+                Organizations:
+                - *TSO
+                - *DSO
+                - *THIRD
+                - *BSP
+                - *PRODUCER
+
+    starnetwork:
+        Consortium: StarNetworkConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *TSO
+                - *DSO
+                - *THIRD
+                - *BSP
+                - *PRODUCER
+
+    starnetworkorder:
+        Consortium: StarNetworkConsortium
+        Application:
+            <<: *ApplicationDefaults
+            Organizations:
+                - *TSO
+                - *DSO

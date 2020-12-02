@@ -1,0 +1,72 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+
+version: '3.7'
+services:
+  dso.star.server:
+    container_name: dso.star.server
+    build:
+      context: .
+    entrypoint:
+      - grunt
+      - dev
+    healthcheck:
+      test: curl --fail http://localhost:3000/api/readiness-probe
+      interval: 10m
+      timeout: 15s
+      retries: 3
+      start_period: 50s
+    environment:
+      - AUTHENTICATION_CONFIGURATION_PATH=/usr/src/app/config/authConfiguration.json
+      - AUTHENTICATION_SECRET=/usr/src/app/config/secret.json
+      - CONNECTION_PROFILE=/usr/src/app/config/connectionprofile/connectionprofile.dso.yaml
+      - ORDERER_NAME=orderer.star.com
+      - PEER_NAME=peer0.dso.star.com
+      - CA_NAME=ca.dso.star.com
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./config/dso:/usr/src/app/config/
+      - ./credentials:/etc/star/credentials
+      - ./../resources/conf/infra/channel-artifacts:/etc/star/channel-artifacts
+      - ./../resources/conf/infra/crypto-config:/etc/star/crypto-config
+      - ../chaincode:/chaincode
+    ports:
+      - '3001:3000'
+    networks:
+      - star
+
+  dso.star.client:
+    build:
+      context: ../client
+    command: npm run ng -- serve --env=dso --host 0.0.0.0 --disable-host-check
+    healthcheck:
+      test: curl --fail http://localhost:4200
+      interval: 10m
+      timeout: 15s
+      retries: 3
+      start_period: 20s
+    container_name: dso.star.client
+    volumes:
+      - ../client/src:/usr/src/app/src
+    networks:
+      - star
+
+  dso.star.reverse_proxy:
+    container_name: dso.star.reverse_proxy
+    build:
+      context: ../reverse-proxy
+    volumes:
+      - ../reverse-proxy/nginx.template:/etc/nginx/nginx.template
+    environment:
+      - CLIENT_NAME=dso.star.client
+      - SERVER_NAME=dso.star.server
+      - SERVER_PORT=3000
+    ports:
+      - '5001:5000'
+    networks:
+      - star
+
+networks:
+  star:
+    name: star

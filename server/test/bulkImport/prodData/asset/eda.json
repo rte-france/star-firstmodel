@@ -1,0 +1,20 @@
+[
+  {
+    "a46Name": "BSP1",
+    "edaRegisteredResourceName": "LANDET 1",
+    "edaRegisteredResourceMrid": "674846",
+    "a46IEC": "FR0001"
+  },
+  {
+    "a46Name": "BSP2",
+    "edaRegisteredResourceName": "BASSIT 2",
+    "edaRegisteredResourceMrid": "303292",
+    "a46IEC": "FR0002"
+  },
+  {
+    "a46Name": "BSP3",
+    "edaRegisteredResourceName": "OCEANT 1",
+    "edaRegisteredResourceMrid": "675245",
+    "a46IEC": "FR0003"
+  }
+]

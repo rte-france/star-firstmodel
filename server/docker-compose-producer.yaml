@@ -1,0 +1,66 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+
+version: '3.7'
+services:
+  producer.star.server:
+    container_name: producer.star.server
+    build:
+      context: .
+    entrypoint:
+      - grunt
+      - dev
+    environment:
+      - AUTHENTICATION_CONFIGURATION_PATH=/usr/src/app/config/authConfiguration.json
+      - AUTHENTICATION_SECRET=/usr/src/app/config/secret.json
+      - CONNECTION_PROFILE=/usr/src/app/config/connectionprofile/connectionprofile.producer.yaml
+      - ORDERER_NAME=orderer.star.com
+      - PEER_NAME=peer0.third.star.com
+      - CA_NAME=ca.producer.star.com
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./config/producer:/usr/src/app/config/
+      - ./credentials:/etc/star/credentials
+      - ./../resources/conf/infra/channel-artifacts:/etc/star/channel-artifacts
+      - ./../resources/conf/infra/crypto-config:/etc/star/crypto-config
+      - ../chaincode:/chaincode
+    ports:
+      - '3003:3000'
+    networks:
+      - star
+
+  producer.star.client:
+    build:
+      context: ../client
+    healthcheck:
+      test: curl --fail http://localhost:4200
+      interval: 10m
+      timeout: 15s
+      retries: 3
+      start_period: 20s
+    command: npm run ng -- serve --env=producer --host 0.0.0.0 --disable-host-check
+    container_name: producer.star.client
+    volumes:
+      - ../client/src:/usr/src/app/src
+    networks:
+      - star
+
+  producer.star.reverse_proxy:
+    container_name: producer.star.reverse_proxy
+    build:
+      context: ../reverse-proxy
+    volumes:
+      - ../reverse-proxy/nginx.template:/etc/nginx/nginx.template
+    environment:
+      - CLIENT_NAME=producer.star.client
+      - SERVER_NAME=producer.star.server
+      - SERVER_PORT=3000
+    ports:
+      - '5003:5000'
+    networks:
+      - star
+
+networks:
+  star:
+    name: star

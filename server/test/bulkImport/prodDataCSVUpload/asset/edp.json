@@ -1,0 +1,42 @@
+[
+  {
+    "siteId": "PDL00000000277784",
+    "edpRegisteredResourceName": "PYLADT 1",
+    "edpRegisteredResourceMrid": "17X000000822909"
+  },
+  {
+    "siteId": "PRM00000000751304",
+    "edpRegisteredResourceName": "GUJANT 1",
+    "edpRegisteredResourceMrid": "17X000000899511"
+  },
+  {
+    "siteId": "PDL00000000985161",
+    "edpRegisteredResourceName": "ARCACT 1",
+    "edpRegisteredResourceMrid": "17X000000201111"
+  },
+  {
+    "siteId": "PPE_211955",
+    "edpRegisteredResourceName": "FACTUT 1",
+    "edpRegisteredResourceMrid": "17X000000455055"
+  },
+  {
+    "siteId": "PDL00000000995682",
+    "edpRegisteredResourceName": "LATEST 1",
+    "edpRegisteredResourceMrid": "17X000000306360"
+  },
+  {
+    "siteId": "CARD00000000276576",
+    "edpRegisteredResourceName": "PYLADT 2",
+    "edpRegisteredResourceMrid": "17X000000988013"
+  },
+  {
+    "siteId": "PRM00000000234766",
+    "edpRegisteredResourceName": "BISCAT 1",
+    "edpRegisteredResourceMrid": "17X000000330656"
+  },
+  {
+    "siteId": "PDL00000000760489",
+    "edpRegisteredResourceName": "ARCACT 2",
+    "edpRegisteredResourceMrid": "17X000000644997"
+  }
+]

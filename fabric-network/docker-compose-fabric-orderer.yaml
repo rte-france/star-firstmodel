@@ -1,0 +1,39 @@
+# Copyright (C) 2020, RTE (http://www.rte-france.com)
+# SPDX-License-Identifier: Apache-2.0
+
+version: "3.7"
+services:
+  orderer.star.com:
+    image: hyperledger/fabric-orderer:amd64-1.4.8
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    container_name: orderer.star.com
+    environment:
+      - ORDERER_GENERAL_LOGLEVEL=DEBUG
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_LISTENPORT=7050
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orderer/orderer.genesis.block
+      - ORDERER_GENERAL_LOCALMSPDIR=/var/hyperledger/orderer/msp
+      - ORDERER_GENERAL_LOCALMSPID=Consortium
+      - ORDERER_GENERAL_TLS_ENABLED=false
+      - ORDERER_GENERAL_TLS_PRIVATEKEY=/var/hyperledger/orderer/tls/server.key
+      - ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orderer/tls/server.crt
+      - ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orderer/tls/ca.crt]
+      - BASE_DOCKER_NS=hyperledger
+      - DOCKER_NS=hyperledger
+      - ARCH=amd64
+      - PROJECT_VERSION=1.4.8
+      - BASE_VERSION=0.4.14
+    volumes:
+      - ../resources/conf/infra/channel-artifacts/genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+      - ../resources/conf/infra/crypto-config/ordererOrganizations/star.com/orderers/orderer.star.com/msp:/var/hyperledger/orderer/msp
+      - ../resources/conf/infra/crypto-config/ordererOrganizations/star.com/orderers/orderer.star.com/tls/:/var/hyperledger/orderer/tls
+    command: orderer
+    ports:
+      - "7050:7050"
+    networks:
+      - star
+
+networks:
+  star:
+    name: star

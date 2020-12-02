@@ -1,0 +1,90 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/styles';
+
+.icon {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.search-title {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-top: 65px;
+  color: $color-primary;
+  display: inline-block;
+}
+
+.result-table {
+  margin-top: 40px;
+}
+
+.search-field {
+  font-family: $font-family-primary;
+  font-size: 18px;
+  background-color: $color-secondary;
+  color: $font-color-primary;
+  padding: 18px 20px 15px 20px;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  width: 180px;
+
+  &-icon {
+    background-color: $color-secondary;
+  }
+}
+
+.start-date {
+  margin-left: 100px;
+}
+
+.end-date {
+  margin-left: -15px;
+}
+
+.btn-selection {
+  margin-left: 10px;
+  height: 60px;
+  background: white;
+  border-radius: 0;
+  border-color: $color-secondary;
+  border-width: 2px;
+  padding-left: 15px;
+  width: 140px;
+  text-align: left;
+  padding-right: 0;
+}
+
+.filter-box {
+  background: $color-secondary;
+  margin-left: 5px;
+  padding-right: 0;
+  height: 59px;
+  max-width: 287px;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border-color: $color-secondary;
+  border-width: 2px;
+}
+
+.filter-text {
+  align-self: center;
+  font-family: $font-family-primary;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+img.calendar {
+  background-color: $color-secondary;
+  padding-right: 15px;
+  padding-left: 5px;
+}

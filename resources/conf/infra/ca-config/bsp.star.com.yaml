@@ -1,0 +1,10 @@
+ca:
+  name: ca.bsp.star.com
+  keyfile: "/etc/hyperledger/fabric-ca-bsp-server-config/ca.bsp.star.com_sk"
+  certfile: "/etc/hyperledger/fabric-ca-bsp-server-config/ca.bsp.star.com-cert.pem"
+
+tls:
+  enabled: false
+
+csr:
+  cn: ca.bsp.star.com

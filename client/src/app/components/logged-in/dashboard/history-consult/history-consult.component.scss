@@ -1,0 +1,58 @@
+@import '../../../../../sass/variables';
+@import '../../../../../sass/styles';
+
+.icon {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.history-consult-title {
+  margin-top: 40px;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 48px;
+  margin-left: 20px;
+  color: $color-primary;
+  display: inline-block;
+}
+
+.btn-elements {
+  margin-left: 100px;
+}
+
+.btn {
+  width: 220px;
+  height: 80px;
+  border-radius: 0;
+  outline: none;
+  font-family: $font-family-primary;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.btn-next {
+  background-color: $color-primary;
+  color: #ffffff;
+}
+
+.btn-this {
+  background-color: #67caeb;
+  color: #ffffff;
+}
+
+.btn-other {
+  background-color: $color-secondary;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item {
+  width: 220px;
+  height: 40px;
+  border-radius: 0;
+  outline: none;
+  font-family: $font-family-primary;
+  font-size: 14px;
+}

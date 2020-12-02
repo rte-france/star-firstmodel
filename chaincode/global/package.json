@@ -1,0 +1,34 @@
+{
+  "name": "star_global_chaincode",
+  "version": "1.0.0",
+  "description": "global chaincode for RTE star",
+  "engines": {
+    "node": ">=8.4.0",
+    "npm": ">=5.3.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "lint": "tslint --fix -c tslint.json './src/**/*.ts'",
+    "test": "npm run lint && mocha -r ts-node/register tests/**/*.spec.ts --reporter spec",
+    "test:watch": "npm run lint && mocha -r ts-node/register tests/**/*.spec.ts --reporter spec --watch app/**/*.spec.ts --watch-extensions ts",
+    "clean": "rm -rf dist"
+  },
+  "engine-strict": true,
+  "engineStrict": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "fabric-shim": "1.4.2",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "@theledger/fabric-mock-stub": "4.0.0",
+    "ts-node": "8.4.1",
+    "typescript": "3.6.3",
+    "tslint": "5.20.0",
+    "@types/chai": "4.2.3",
+    "@types/mocha": "5.2.7",
+    "chai": "4.2.0",
+    "mocha": "6.2.0"
+  }
+}

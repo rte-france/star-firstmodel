@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "userEmail": "user.star@tso1.com",
+      "password": "$2a$10$dROBiwjd8Gdm1laM9F7nM.wg0jS36AzVV2nbxUlPpHjcNUXh3N/5q",
+      "organizationId": "TSO1",
+      "organizationType": "tso",
+      "role": "admin"
+    }
+  ]
+}

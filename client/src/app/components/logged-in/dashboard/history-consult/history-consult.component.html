@@ -1,0 +1,41 @@
+<div class="col-md-12">
+  <img
+    class="icon"
+    src="../../../../assets/img/icon-header-2.svg"
+  />
+  <div class="history-consult-title">
+    Consulter l'historique d'activation
+  </div>
+  <div class="btn-elements">
+    <button
+      class="btn btn-this"
+      (click)="setSelectedMonth(currentMonthIndex - 1)"
+      routerLink="/historique"
+    >
+      <span class="btn-title">{{ previousMonthName }}</span>
+    </button>
+    <button
+      class="btn btn-next"
+      (click)="setSelectedMonth(currentMonthIndex)"
+      routerLink="/historique"
+    >
+      <span class="btn-title">{{ currentMonthName }}</span>
+    </button>
+    <span ngbDropdown>
+      <button class="btn btn-other" id="monthDropdown" ngbDropdownToggle>
+        <span class="btn-title">Autre mois...</span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="monthDropdown">
+        <div
+          *ngFor="let monthIndex of setMonthIndexes()"
+          class="dropdown-item"
+          ngbDropdownItem
+          (click)="setSelectedMonth(monthIndex)"
+          routerLink="/historique"
+        >
+          {{ getMonthByIndex(monthIndex) }}
+        </div>
+      </div>
+    </span>
+  </div>
+</div>

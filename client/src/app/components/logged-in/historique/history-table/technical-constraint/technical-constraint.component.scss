@@ -1,0 +1,82 @@
+@import '../../../../../../sass/variables';
+@import '../../../../../../sass/styles';
+
+.technical-constraint {
+  background-color: #d00100;
+  margin-right: 30px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.no-technical-constraint {
+  background-color: #7b7b7b;
+  margin-right: 30px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.tooltip-technical-constraint-title {
+  font-family: $font-family-primary;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.tooltip-technical-constraint-input {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: $font-family-primary;
+  width: 225px;
+  font-size: 14px;
+  display: inline-block;
+  background-color: $color-secondary;
+  color: $font-color-primary;
+  padding: 12px 10px 12px 10px;
+  outline: none;
+  border-radius: 0;
+  border: none;
+}
+
+.tooltip-technical-constraint-submit-button {
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-left: 46%;
+  background-color: $color-primary;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: $font-family-primary;
+  font-size: 18px;
+}
+
+.tooltip-message {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 7px;
+  font-size: $font-size-tertiary;
+  font-family: $font-family-primary;
+}
+
+.tooltip-message-primary {
+  font-family: $font-family-primary;
+  font-size: $font-size-tertiary;
+  color: #d00100;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.close-fix {
+  visibility: hidden;
+}

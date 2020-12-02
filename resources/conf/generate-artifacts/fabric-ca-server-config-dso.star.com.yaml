@@ -1,0 +1,99 @@
+
+port: 7054
+debug: false
+tls:
+  enabled: false
+  certfile: ca-cert.pem
+  keyfile: ca-key.pem
+  clientauth:
+    type: noclientcert
+    certfiles:
+
+ca:
+  name:
+  keyfile: ca-key.pem
+  certfile: ca-cert.pem
+  chainfile: ca-chain.pem
+
+registry:
+  maxEnrollments: -1
+  identities:
+     - name: admin
+       pass: adminpw
+       type: client
+       affiliation: ""
+       maxenrollments: -1
+       attrs:
+          hf.Registrar.Roles: "client,user,peer,validator,auditor"
+          hf.Registrar.DelegateRoles: "client,user,validator,auditor"
+          hf.Revoker: true
+          hf.IntermediateCA: true
+
+db:
+  type: sqlite3
+  datasource: fabric-ca-server.db
+  tls:
+      enabled: false
+      certfiles:
+        - db-server-cert.pem
+      client:
+        certfile: db-client-cert.pem
+        keyfile: db-client-key.pem
+
+ldap:
+   enabled: false
+   url: ldap://<adminDN>:<adminPassword>@<host>:<port>/<base>
+   tls:
+      certfiles:
+        - ldap-server-cert.pem
+      client:
+         certfile: ldap-client-cert.pem
+         keyfile: ldap-client-key.pem
+
+affiliations:
+   dso.star.com:
+      - dep0
+      - dep1
+
+signing:
+    default:
+      usage:
+        - digital signature
+      expiry: 8760h
+    profiles:
+      ca:
+         usage:
+           - cert sign
+         expiry: 43800h
+         caconstraint:
+           isca: true
+           maxpathlen: 0
+
+csr:
+   cn: fabric-ca-server
+   names:
+      - C: US
+        ST: "North Carolina"
+        L:
+        O: Hyperledger
+        OU: Fabric
+   hosts:
+     - 56ce4621e6c5
+   ca:
+      pathlen:
+      pathlenzero:
+      expiry: 131400h
+
+bccsp:
+    default: SW
+    sw:
+        hash: SHA2
+        security: 256
+        filekeystore:
+            # The directory used for the software file-based keystore
+            keystore: /var/hyperledger/fabric-ca-server/keystore
+
+cacount:
+
+cafiles:
+

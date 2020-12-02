@@ -1,0 +1,76 @@
+@import '../../../../../sass/variables';
+@import '../../../../../sass/styles';
+
+.icon {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  width: 35px;
+}
+
+.search-title {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 48px;
+  margin-left: 20px;
+  color: $color-primary;
+  display: inline-block;
+}
+
+.btn-search {
+  font-family: $font-family-primary;
+  font-size: 24px;
+  background-color: $color-secondary;
+  color: $font-color-primary;
+  margin-left: 100px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.search-field {
+  font-family: $font-family-primary;
+  font-size: 24px;
+  background-color: $color-secondary;
+  color: $font-color-primary;
+  margin-left: 100px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  width: 650px;
+}
+
+.submit {
+  background-color: #f8f8f8;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  width: 50px;
+  display: inline-block;
+  height: 59px;
+  padding-top: 12px;
+}
+
+.svg-icon {
+  vertical-align: middle;
+  font-size: 30px;
+  opacity: 0.5;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.form-inline {
+  display: inline-block;
+  outline: none;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.btn-title {
+  margin-right: 12px;
+}

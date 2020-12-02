@@ -1,0 +1,145 @@
+@import '../../../../../sass/variables';
+@import '../../../../../sass/styles';
+
+.icon {
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.svg-icon {
+  width: 30px;
+  opacity: 0.4;
+}
+
+.submit {
+  background-color: #f8f8f8;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  width: 50px;
+  display: inline-block;
+  height: 59px;
+  padding-top: 14px;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.form-inline {
+  display: inline-block;
+  outline: none;
+}
+
+.search-title {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-top: 65px;
+  color: $color-primary;
+  display: inline-block;
+}
+
+.no-arrow-style {
+  margin-left: 100px;
+}
+
+.search-field {
+  font-family: $font-family-primary;
+  font-size: 24px;
+  background-color: $color-secondary;
+  color: $font-color-primary;
+  margin-left: 100px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  width: 650px;
+}
+
+.results-number {
+  font-family: $font-family-primary;
+  color: $font-color-primary;
+  font-size: 24px;
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.eda-results-group {
+  margin-left: 100px;
+  margin-top: 70px;
+
+  .site-result {
+    font-family: $font-family-primary;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+    color: $font-color-primary;
+    width: 250px;
+    border: none;
+    background-color: $color-secondary;
+    margin-bottom: 20px;
+    padding: 22px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .unfolded-site-result {
+    padding: 30px;
+    font-size: 24px;
+    font-family: $font-family-primary;
+    color: $font-color-secondary;
+    min-height: 380px;
+    width: 250px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: $color-primary;
+    cursor: pointer;
+  }
+
+  .site-details {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-family: $font-family-primary;
+    color: $font-color-primary;
+    min-height: 380px;
+    width: 250px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: $color-secondary;
+
+    .code-site-title,
+    .code-site-result {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .code-site-title {
+      font-weight: bolder;
+    }
+
+    .informations {
+      margin-bottom: 15px;
+    }
+  }
+
+  .history-link {
+    font-weight: bolder;
+    float: right;
+    font-size: $font-size-primary;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+}

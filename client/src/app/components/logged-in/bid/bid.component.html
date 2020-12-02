@@ -1,0 +1,108 @@
+<div class="block">
+  <div class="row">
+    <div class="col-md-12">
+      <img
+        (click)="redirect()"
+        class="icon"
+        src="../../../../assets/img/arrow-left.svg"
+      />
+      <div class="search-title">
+        Soumettre une nouvelle offre
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <div class="new-program">
+        Nouveau programme d'appel
+      </div>
+      <div class="center">
+        <ngx-file-drop
+          dropZoneClassName="drop-file-bid"
+          (onFileDrop)="droppedPowerPlanEnergySchedule($event)"
+          (onFileOver)="fileOver($event)"
+          (onFileLeave)="fileLeave($event)"
+          contentClassName="content"
+        >
+          <ng-template
+            ngx-file-drop-content-tmp
+            let-openFileSelector="openFileSelector"
+          >
+            <img class="files" src="../../../../assets/img/icon-files.svg" />
+            <div class="upload-text">Glisser-déposer un fichier...</div>
+            <p class="or">ou</p>
+            <button
+              type="button"
+              class="btn import"
+              (click)="openFileSelector()"
+            >
+              Importer un programme d'appel
+            </button>
+          </ng-template>
+        </ngx-file-drop>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="new-bid">
+        Nouvelle bid
+      </div>
+      <div class="center">
+        <ngx-file-drop
+          dropZoneClassName="drop-file-bid"
+          (onFileDrop)="droppedBid($event)"
+          (onFileOver)="fileOver($event)"
+          (onFileLeave)="fileLeave($event)"
+          contentClassName="content"
+        >
+          <ng-template
+            ngx-file-drop-content-tmp
+            let-openFileSelector="openFileSelector"
+          >
+            <img class="files" src="../../../../assets/img/icon-files.svg" />
+            <div class="upload-text">Glisser-déposer un fichier...</div>
+            <p class="or">ou</p>
+            <button
+              type="button"
+              class="btn import"
+              (click)="openFileSelector()"
+            >
+              Importer un offre
+            </button>
+          </ng-template>
+        </ngx-file-drop>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="upload-table">
+      <table class="table">
+        <tbody class="upload-name-style">
+          <tr>
+            <td *ngIf="displaySuccessBid && filesBid[0]" class="success">
+              <strong>Succès Upload {{ filesBid[0]?.relativePath }}</strong>
+            </td>
+            <td
+              *ngIf="
+                displaySuccessPowerPlanEnergySchedule &&
+                filesPowerPlanEnergySchedule[0]
+              "
+              class="success"
+            >
+              <strong
+                >Succès Upload
+                {{ filesPowerPlanEnergySchedule[0]?.relativePath }}</strong
+              >
+            </td>
+            <td *ngIf="displayError" class="error">
+              <strong>Echec Upload: {{ message }}</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <button class="btn send-btn" (click)="submitFile()">Soumettre</button>
+  </div>
+</div>

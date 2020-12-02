@@ -1,0 +1,7 @@
+<app-eda-view
+  *ngIf="!isOrganizationType('producer')"
+  [organizationType]="organizationType"
+  [company]="company"
+>
+</app-eda-view>
+<app-site-view *ngIf="isOrganizationType('producer')"> </app-site-view>

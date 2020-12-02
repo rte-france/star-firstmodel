@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detailed01" transform="translate(-522.000000, -735.000000)" fill="gray">
+            <g id="DataList" filter="url(#filter-1)" transform="translate(130.000000, 499.000000)">
+                <g id="ISWC-Info" transform="translate(26.000000, 92.000000)">
+                    <path d="M377.86313,149.068301 L377.638522,153.34968 C377.613565,153.786705 377.513739,154.148863 377.001826,154.148863 C376.489913,154.148863 376.390087,153.786705 376.36513,153.34968 L376.140522,149.068301 C376.102783,148.469371 376.152696,148.144342 376.689565,148.144342 L377.326261,148.144342 C377.86313,148.144342 377.888087,148.469371 377.86313,149.068301 L377.86313,149.068301 Z M377.86313,157.144733 C377.86313,157.618886 377.638522,157.856267 377.164348,157.856267 L376.839304,157.856267 C376.36513,157.856267 376.140522,157.618886 376.140522,157.144733 L376.140522,156.819703 C376.140522,156.34555 376.36513,156.108169 376.839304,156.108169 L377.164348,156.108169 C377.638522,156.108169 377.86313,156.34555 377.86313,156.819703 L377.86313,157.144733 Z M377,146 C373.134174,146 370,149.134646 370,153.000304 C370,156.866571 373.134174,160 377,160 C380.866435,160 384,156.866571 384,153.000304 C384,149.134646 380.866435,146 377,146 L377,146 Z" id="ErrorIcon"></path>
+                </g>
+            </g>
+        </g>i
+    </g>
+</svg>

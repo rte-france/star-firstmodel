@@ -1,0 +1,104 @@
+<nav
+  class="navbar navbar-expand-md navbar-light nav-border"
+  *ngIf="displayHeader()"
+>
+  <div class="col-md-5">
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngIf="hasRole('tso')">
+        <a
+          class="nav-link"
+          id="header-button-navigate-dashboard"
+          routerLinkActive="active"
+          routerLink="/dashboard"
+        >
+          <img
+            class="tab"
+            src="../../../../assets/img/icon-header-1.svg"
+          />
+          <div class="link-item">Accueil</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="header-button-navigate-composition"
+          routerLinkActive="active"
+          routerLink="/composition"
+        >
+          <img
+            class="tab"
+            src="../../../../assets/img/icon-header-3.svg"
+          />
+          <div
+            class="link-item"
+            *ngIf="!isOrganizationType('producer'); else compositionSite"
+          >
+            Composition EDA
+          </div>
+          <ng-template #compositionSite>
+            <div class="link-item">
+              Sites
+            </div>
+          </ng-template>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="hasRole('bsp')">
+        <a
+          class="nav-link"
+          id="header-button-navigate-offre"
+          routerLinkActive="active"
+          routerLink="/offre"
+        >
+          <img
+            class="tab"
+            src="../../../../assets/img/icon-header-4.svg"
+          />
+          <div class="link-item">Offre/PA</div>
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="hasRole('dso')">
+        <a
+          class="nav-link"
+          id="header-button-navigate-comptage"
+          routerLinkActive="active"
+          routerLink="/comptage"
+        >
+          <img
+            class="tab"
+            src="../../../../assets/img/icon-header-4.svg"
+          />
+          <div class="link-item">Comptage</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="header-button-navigate-historique"
+          routerLinkActive="active"
+          routerLink="/historique"
+        >
+          <img
+            class="tab"
+            src="../../../../assets/img/icon-header-2.svg"
+          />
+          <div class="link-item">Historique</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <div class="rte-logo-bar">
+      <img class="rte-logo" src="../../../../assets/img/rte-logo.png" />
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="nav-item logout">
+      <div class="logout-items">
+        <div class="spacing">{{ organization }}</div>
+        <button class="logout-btn" (click)="logoutUser()">
+          <img src="../../../../assets/img/icon-logout.svg" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,12 @@
+[
+  {
+    "nazaRegisteredResourceMrid": "AUT750",
+    "orderAllValue": 1,
+    "createdDateTime": "1577830287",
+    "objectAggregationMeteringPoint": [
+      "PDL00000000277784",
+      "PRM00000000751304"
+    ],
+    "a04RegisteredResourceMrid": ["DSO3"]
+  }
+]

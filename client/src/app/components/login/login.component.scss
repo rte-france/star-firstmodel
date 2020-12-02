@@ -1,0 +1,61 @@
+.rte-logo-bar {
+  margin: auto;
+  width: 41px;
+}
+
+.rte-logo {
+  width: 41px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.login-form {
+  text-align: center;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.btn-login {
+  background-color: #02a7de;
+  border-radius: 0;
+  width: 241px;
+  height: 71px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Avenir, Helvetica, sans-serif;
+  outline: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  font-family: Avenir, Helvetica, sans-serif;
+  color: #8f8f8f;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.text-danger {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+input[type='email'],
+input[type='password'] {
+  padding: 15px 15px;
+  font-size: 24px;
+  font-weight: 200;
+  background-color: #f8f8f8;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  width: 481px;
+  margin: auto;
+  line-height: 20px;
+}
